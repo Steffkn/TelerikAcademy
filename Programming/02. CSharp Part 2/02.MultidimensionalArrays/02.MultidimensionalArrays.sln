@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.FillMatrix", "01.FillMatrix\01.FillMatrix.csproj", "{0888A6C5-5895-4A3A-8BBA-E8545E56497F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.MaxSumMatrix3x3", "02.MaxSumMatrix3x3\02.MaxSumMatrix3x3.csproj", "{6DF88B62-C368-4628-BC4D-69F539AAEEFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MaxSeqStringMatrix", "03.MaxSeqStringMatrix\03.MaxSeqStringMatrix.csproj", "{A5D79184-569F-43CB-8ECD-7A031F92417D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.BinSearchTest", "04.BinSearchTest\04.BinSearchTest.csproj", "{79D7F76C-E1B9-4027-9603-7C41A6415B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.SortArrayOfStrings", "05.SortArrayOfStrings\05.SortArrayOfStrings.csproj", "{A33F9D90-0BFF-4FC0-87A0-8D74749B7AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.MatrixClassOverload", "06.MatrixClassOverload\06.MatrixClassOverload.csproj", "{A9F4C223-DC62-46FE-B919-59A866CCFCA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.LargestAreaOfEqualElem", "07.LargestAreaOfEqualElem\07.LargestAreaOfEqualElem.csproj", "{9BE4BB49-E70D-4137-9E03-B6B574FCAAA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0888A6C5-5895-4A3A-8BBA-E8545E56497F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0888A6C5-5895-4A3A-8BBA-E8545E56497F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0888A6C5-5895-4A3A-8BBA-E8545E56497F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0888A6C5-5895-4A3A-8BBA-E8545E56497F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF88B62-C368-4628-BC4D-69F539AAEEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF88B62-C368-4628-BC4D-69F539AAEEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF88B62-C368-4628-BC4D-69F539AAEEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF88B62-C368-4628-BC4D-69F539AAEEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D79184-569F-43CB-8ECD-7A031F92417D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D79184-569F-43CB-8ECD-7A031F92417D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D79184-569F-43CB-8ECD-7A031F92417D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D79184-569F-43CB-8ECD-7A031F92417D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D7F76C-E1B9-4027-9603-7C41A6415B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D7F76C-E1B9-4027-9603-7C41A6415B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D7F76C-E1B9-4027-9603-7C41A6415B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D7F76C-E1B9-4027-9603-7C41A6415B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33F9D90-0BFF-4FC0-87A0-8D74749B7AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33F9D90-0BFF-4FC0-87A0-8D74749B7AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33F9D90-0BFF-4FC0-87A0-8D74749B7AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33F9D90-0BFF-4FC0-87A0-8D74749B7AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F4C223-DC62-46FE-B919-59A866CCFCA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F4C223-DC62-46FE-B919-59A866CCFCA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F4C223-DC62-46FE-B919-59A866CCFCA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F4C223-DC62-46FE-B919-59A866CCFCA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE4BB49-E70D-4137-9E03-B6B574FCAAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE4BB49-E70D-4137-9E03-B6B574FCAAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE4BB49-E70D-4137-9E03-B6B574FCAAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE4BB49-E70D-4137-9E03-B6B574FCAAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
