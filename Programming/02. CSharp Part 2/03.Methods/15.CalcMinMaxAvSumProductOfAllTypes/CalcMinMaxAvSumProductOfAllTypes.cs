@@ -1,29 +1,22 @@
 ﻿// Write methods to calculate minimum, maximum, average, sum and product of given set of integer numbers. 
 // Use variable number of arguments.
 
+// * Modify your last program and try to make it work for any number type, not just integer (e.g. decimal, float, byte, etc.). 
+// Use generic method (read in Internet about generic methods in C#).
+
+
 using System;
 using System.Collections.Generic;
-class CalcMinMaxAvaragaSumProduct
+class CalcMinMaxAvSumProductOfAllTypes
 {
     static void Main()
     {
-        int element;
-        List<int> listOfIntegers = new List<int>();
-        Console.WriteLine("Enter integers and anything else to stop: ");
-
-        // fill the list with valid integers
-        // if the input isnt a valid integer the loop will break
-        while (int.TryParse(Console.ReadLine(), out element))
-        {
-            listOfIntegers.Add(element);
-        }
-
         // find the wanted values
-        int min = MinValue(listOfIntegers);
-        int max = MaxValue(listOfIntegers);
-        int avarage = Avarage(listOfIntegers);
-        int sum = SumAll(listOfIntegers);
-        long product = ProductOfAll(listOfIntegers);
+        dynamic min = MinValue(1, 2, 3, 4, 5, 6);
+        dynamic max = MaxValue(1, 2, 3, 4, 5, 6);
+        dynamic avarage = Avarage(1, 2, 3, 4, 5, 6);
+        dynamic sum = SumAll(1, 2, 3, 4, 5, 6);
+        dynamic product = ProductOfAll(1, 2, 3, 4, 5, 6);
 
         // print the results
         Console.WriteLine("The minimal value is {0}", min);
@@ -38,11 +31,11 @@ class CalcMinMaxAvaragaSumProduct
     /// </summary>
     /// <param name="listOfElements">List of elements</param>
     /// <returns>Returns the element with minimal value</returns>
-    public static int MinValue(List<int> listOfElements)
+    public static T MinValue<T>(params T[] elements)
     {
-        int min = int.MaxValue;
+        dynamic min = elements[0];
 
-        foreach (var element in listOfElements)
+        foreach (T element in elements)
         {
             if (min > element)
             {
@@ -58,11 +51,11 @@ class CalcMinMaxAvaragaSumProduct
     /// </summary>
     /// <param name="listOfElements">List of elements</param>
     /// <returns>Returns the element with maximal value</returns>
-    public static int MaxValue(List<int> listOfElements)
+    public static T MaxValue<T>(params T[] elements)
     {
-        int max = int.MinValue;
+        dynamic max = int.MinValue;
 
-        foreach (var element in listOfElements)
+        foreach (var element in elements)
         {
             if (max < element)
             {
@@ -77,10 +70,10 @@ class CalcMinMaxAvaragaSumProduct
     /// </summary>
     /// <param name="listOfElements">List of elements</param>
     /// <returns>Returns the sum (int)</returns>
-    public static int SumAll(List<int> listOfElements)
+    public static T SumAll<T>(params T[] elements)
     {
-        int sum = 0;
-        foreach (var element in listOfElements)
+        dynamic sum = 0;
+        foreach (var element in elements)
         {
             sum += element;
         }
@@ -92,14 +85,14 @@ class CalcMinMaxAvaragaSumProduct
     /// </summary>
     /// <param name="listOfElements">The list of integers</param>
     /// <returns></returns>
-    public static int Avarage(List<int> listOfElements)
+    public static T Avarage<T>(params T[] elements)
     {
-        int sum = 0;
+        dynamic sum = 0;
         int counter = 0;
 
         // find the sum and the number of the elements
-        sum = SumAll(listOfElements);
-        counter = listOfElements.Count;
+        sum = SumAll(elements);
+        counter = elements.Length;
 
         // find and return the avarage
         return sum / counter;
@@ -110,11 +103,11 @@ class CalcMinMaxAvaragaSumProduct
     /// </summary>
     /// <param name="listOfElements">List of elements</param>
     /// <returns>Returns the product (long)</returns>
-    public static long ProductOfAll(List<int> listOfElements)
+    public static T ProductOfAll<T>(params T[] elements)
     {
-        long product = 1;
+        dynamic product = 1;
 
-        foreach (var element in listOfElements)
+        foreach (var element in elements)
         {
             product *= element;
         }

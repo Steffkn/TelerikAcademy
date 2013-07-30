@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{721F94CA-8F63-4562-B5DE-C4B6B5A3D9DD}</ProjectGuid>
+    <ProjectGuid>{C38EDA32-4AA3-4057-BD38-9CFD8776EFAB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_13.ReverseDigitFindAvarageSolvesEquation</RootNamespace>
-    <AssemblyName>13.ReverseDigitFindAvarageSolvesEquation</AssemblyName>
+    <RootNamespace>_15.CalcMinMaxAvSumProductOfAllTypes</RootNamespace>
+    <AssemblyName>15.CalcMinMaxAvSumProductOfAllTypes</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ReverseDigitFindAvarageSolvesEquation.cs" />
+    <Compile Include="CalcMinMaxAvSumProductOfAllTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
