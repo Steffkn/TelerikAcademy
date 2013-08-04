@@ -1,6 +1,5 @@
 ﻿// Write a program that exchanges bits 3, 4 and 5 with bits 24, 25 and 26 of given 32-bit unsigned integer.
 
-// универсално решение за 13 и 14 задача
 using System;
 
 class BitExchanging
@@ -25,11 +24,13 @@ class BitExchanging
             mask = 1 << ( q + t );
             UIntAndMask = UInteger & mask;
             tempValue = UIntAndMask >> q + t;      // взимаме 24, 25, 26 бит
+            Console.WriteLine(UIntAndMask);
 
             // взимаме съответният младши бит за размяна
             mask = 1 << ( p + t );
             UIntAndMask = UInteger & mask;
             UIntAndMask = UIntAndMask >> p + t;     // взимаме 3, 4, 5 бит
+            Console.WriteLine(UIntAndMask);
 
 
             // размяната на младшия бит в зависимост от това дали е 1 (събиране) или 0 (умножение)
