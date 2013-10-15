@@ -1,0 +1,4 @@
+﻿0!admin!adminn
+1!user!qwerty
+2!steff!qwerty
+3!kamikadze!12345678
