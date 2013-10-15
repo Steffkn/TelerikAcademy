@@ -1,0 +1,9 @@
+1: file 
+2: with
+3: one
+4: word
+5: on
+6: every
+7: line
+8: of
+9: it

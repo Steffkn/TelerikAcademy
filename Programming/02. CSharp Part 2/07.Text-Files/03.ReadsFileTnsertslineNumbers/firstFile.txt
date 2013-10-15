@@ -1,0 +1,9 @@
+file 
+with
+one
+word
+on
+every
+line
+of
+it

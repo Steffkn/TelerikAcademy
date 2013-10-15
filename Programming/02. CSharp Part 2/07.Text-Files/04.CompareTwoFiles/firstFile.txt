@@ -1,0 +1,5 @@
+first file
+with some text
+to be compared
+with the second
+file

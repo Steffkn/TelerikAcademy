@@ -1,0 +1,6 @@
+first file
+with some text to be writen 
+in ConcatenatedFile.txt
+secondfile
+with some more text to be writen 
+in ConcatenatedFile.txt

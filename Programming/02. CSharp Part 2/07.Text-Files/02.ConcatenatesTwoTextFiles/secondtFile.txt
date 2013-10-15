@@ -1,0 +1,3 @@
+secondfile
+with some more text to be writen 
+in ConcatenatedFile.txt
