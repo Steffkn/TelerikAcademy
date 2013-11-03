@@ -1,0 +1,37 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    background-color: grey;
+    font-family: "Segoe UI","Arial",sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#wrap{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px;
+    background-color: white;
+}
+
+#content table{
+    margin: 5px 10px;
+}
+header, footer{
+    text-align: center;
+}
+.error 
+{
+    text-align: center;
+    color: crimson;
+    background-color: lightpink;
+    border: solid red thin;
+}
+.success 
+{
+    text-align: center;
+    color: green;
+    background-color: lightgreen;
+    border: solid green thin;
+}
