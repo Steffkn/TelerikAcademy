@@ -1,0 +1,7 @@
+﻿#freshFruits {
+    width: 350px;
+}
+    #freshFruits th {
+        font-size: larger;
+        font-style: italic;
+    }

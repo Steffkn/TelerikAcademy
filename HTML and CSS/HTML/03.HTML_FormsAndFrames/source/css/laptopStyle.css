@@ -1,0 +1,21 @@
+﻿img {
+    width: 80px;
+}
+
+.laptopInfo td {
+    height: 40px;
+}
+
+#laptops {
+    border: 1px solid black;
+    border-radius: 5px 5px;
+}
+
+    #laptops th {
+        border-bottom: 1px solid black;
+    }
+
+#laptopsInStock {
+    border: 1px solid black;
+    margin: 5px;
+}

@@ -1,0 +1,63 @@
+﻿table {
+    border-radius: 10px 10px;
+}
+
+thead th, tfoot td {
+    background-color: #d8dce2;
+    border-color: #b0b6bd;
+    text-align: left;
+    font-weight: normal;
+    padding: 2px 10px;
+}
+tfoot #pagesInfo {
+    float: right;
+}
+table tbody td {
+    background-color: white;
+    border-color: #dfe4ee;
+    padding: 2px 10px;
+}
+
+.topRoundedBorders {
+    border-radius: 10px 10px 0 0;
+}
+
+.botRoundedBorders {
+    border-radius: 0 0 10px 10px;
+}
+
+input[name="productID"] {
+    width: 30px;
+}
+
+input[name="unitPrice"] {
+    width: 80px;
+}
+
+input[name="quantityPUnit"] {
+    width: 100px;
+}
+
+input[name="unitsInStock"] {
+    width: 80px;
+}
+
+#productID {
+    width: 100px;
+}
+
+#productName {
+    width: 300px;
+}
+
+#unitPrice {
+    width: 200px;
+}
+
+#quantityPUnit {
+    width: 200px;
+}
+
+#unitsInStock {
+    width: 200px;
+}

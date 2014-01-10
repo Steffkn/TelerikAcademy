@@ -23,7 +23,7 @@ else
 		$pass = htmlspecialchars($pass, ENT_QUOTES);
 		
 		if(mb_strlen($username) < 3 || mb_strlen($username) > 20){
-			echo '<p>Името трябва да е между 3 и 20 символа дълга.</p>';
+			echo '<p>Името трябва да е между 3 и 20 символа дългo.</p>';
 			$error = true; //error found
 		}	
 		if(mb_strlen($pass) < 6 || mb_strlen($pass) > 20){
@@ -40,10 +40,10 @@ else
 					// separate the colums by '!'
 					
 					$columns = explode('!', trim($user));
-					echo '<pre>'.print_r($columns,true).'</pre>';
-					var_dump($pass);
-					var_dump($columns[2]);
-					echo '<br>';
+					//echo '<pre>'.print_r($columns,true).'</pre>';
+					//var_dump($pass);
+					//var_dump($columns[2]);
+					//echo '<br>';
 					if($username === $columns[1] && strval($pass) === strval($columns[2]))
 					{
 						if(!mkdir('temp', 0, true)){

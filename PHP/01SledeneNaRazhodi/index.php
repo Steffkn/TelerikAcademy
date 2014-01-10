@@ -68,7 +68,7 @@ if($_POST){
 	<!-- drop down for the type of expense -->
 		<select name="group">
             <?php
-			// adding the all option for the drop down
+			// adding all option for the drop down
 			$groups[0] = 'Всички';
 			// loop trough the elements
             foreach ($groups as $key=>$value) {

@@ -1,0 +1,25 @@
+﻿body, input, td, th {
+    margin: 0;
+    padding: 0;
+}
+
+#calculatorTable {
+    width: 160px;
+    height: 200px;
+}
+
+    #calculatorTable td, #calculatorTable th {
+        border: 1px solid #92fffd;
+    }
+
+    #calculatorTable input {
+        width: 100%;
+        height: 40px;
+        background-color: #3a4041;
+        color: #92fffd;
+        border: 0;
+    }
+
+        #calculatorTable input:hover {
+            background-color: #ff6a00;
+        }

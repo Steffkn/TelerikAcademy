@@ -1,0 +1,14 @@
+﻿table tfoot tr {
+    text-align: center;
+    background-color: #d1ede1;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+.infoLabels {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+}

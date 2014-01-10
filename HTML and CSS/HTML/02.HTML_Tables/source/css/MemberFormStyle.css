@@ -1,0 +1,10 @@
+﻿
+#submitBtn {
+  width: 100px;
+  height: 40px;
+  background:url("../../source/images/submitBtn.png") no-repeat 0 0 transparent;
+  background-size: cover;
+  border-style: hidden;
+  color: #0094ff;
+  cursor: pointer;
+}
