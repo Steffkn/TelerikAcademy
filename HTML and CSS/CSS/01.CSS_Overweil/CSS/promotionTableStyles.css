@@ -1,0 +1,63 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px;
+    font-family: Consolas, Verdana,sans-serif;
+}
+
+table {
+    width: 500px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table th {
+    font-weight: normal;
+    text-align: left;
+    color: white;
+    border: 1px solid #717171;
+    padding: 5px;
+    background-color: #50b505;
+    background: -webkit-linear-gradient(#5ec206, #50b505); /* For Safari */
+    background: -o-linear-gradient(#5ec206, #50b505); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5ec206, #50b505); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5ec206, #50b505); /* Standard syntax */
+}
+
+    table td {
+        border-left: 1px solid #717171;
+        border-right: 1px solid #717171;
+        padding: 5px;
+    }
+
+    table tr:last-of-type {
+        border-bottom: 1px solid #717171;
+    }
+
+    table tr:nth-child(2n+1) {
+        background-color: #ececd8;
+    }
+
+    table tr:nth-child(2n) {
+        background-color: white;
+    }
+
+.flag {
+    padding: 0 0 0 35px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+.uk {
+    background-image: url(../images/flag_uk.jpg);
+}
+.germany {
+    background-image: url(../images/flag_gr.jpg);
+}
+.mexico {
+    background-image: url(../images/flag_mx.jpg);
+}

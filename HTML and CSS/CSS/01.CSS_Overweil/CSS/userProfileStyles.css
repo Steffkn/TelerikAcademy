@@ -1,0 +1,47 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #595959;
+    font-family: Consolas, Verdana,sans-serif; 
+}
+
+table {
+    text-align:left;
+    color: #f1f0a5;
+}
+    table th {
+        color: #a2a8b2;
+        font-size: larger;
+    }
+    table tr td:first-of-type{
+        font-style: italic;
+        color: #cedae0;
+    }
+
+    table td a {
+        text-decoration: none;
+        color: #f1f0a5;
+
+    }
+    table .message {
+        font-weight: bold;
+    }
+    
+    table .notActive {
+        color: red;
+    }
+    table .notAnswered {
+        color: #d96a21;
+    }
+    table .info {
+        color: #9fa59f;
+    }
+    table .userName {
+        padding-left: 12px;
+        background: url(../images/online.png) no-repeat;
+        background-size: 10px;
+        background-position:left center;
+    }

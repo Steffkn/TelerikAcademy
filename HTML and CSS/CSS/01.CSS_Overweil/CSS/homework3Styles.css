@@ -1,0 +1,54 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5px;
+    background-color: #a9a9a9;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+h1, nav ul, nav ul a {
+    color: #fafad2;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+    nav ul li:last-child {
+        text-decoration: underline;
+        color: #dfefd2;
+    }
+
+nav .current {
+    background-color: #d3d3d3;
+}
+
+section article header h1 {
+    text-align: left;
+}
+
+section article footer {
+    margin: 10px 0;
+}
+
+    section article footer p {
+        font-size: small;
+        text-align: left;
+    }
+
+    section article footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+body footer:last-of-type {
+    text-align: center;
+}
