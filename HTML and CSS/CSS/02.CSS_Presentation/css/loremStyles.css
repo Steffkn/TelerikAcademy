@@ -1,0 +1,11 @@
+body {
+	font-family:Consolas, Edwardian Script ITC;
+	color: #0094FF;
+}
+p:first-letter {
+	font-family: Edwardian Script ITC;
+	font-size: 2em;
+}
+p:first-line {
+	font-weight: bold;
+}

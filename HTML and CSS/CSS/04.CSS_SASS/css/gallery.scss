@@ -1,0 +1,108 @@
+body, div, label, input{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+background: #ccc;
+	div#gallery-wrapper{
+		margin: 0 auto;
+		padding: 10px;
+		width: 700px;
+		text-align: center;
+		background: white;
+		label{
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+			background-color: #eeeeee;
+			background-repeat: no-repeat;
+
+			-moz-background-size: cover;
+			-o-background-size: cover ;
+			-webkit-background-size: cover;
+			background-size: cover;
+
+			border: 2px solid white;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+
+			&:hover{
+			border: 2px solid grey;
+			}
+
+			&[for=first_Radio]{
+				background-image: url(../images/gallery/1.jpg);
+			}
+			&[for=second_Radio]{
+				background-image: url(../images/gallery/2.jpg);
+			}
+			&[for=third_Radio]{
+				background-image: url(../images/gallery/3.jpg);
+			}
+			&[for=fourth_Radio]{
+				background-image: url(../images/gallery/4.jpg);
+			}
+			&[for=fifth_Radio]{
+				background-image: url(../images/gallery/5.jpg);
+			}
+			&[for=sixth_Radio]{
+				background-image: url(../images/gallery/6.jpg);
+			}
+			&[for=seventh_Radio]{
+				background-image: url(../images/gallery/7.jpg);
+			}
+			&[for=eighth_Radio]{
+				background-image: url(../images/gallery/8.jpg);
+			}
+
+
+		}
+		
+		input {
+			display: none;
+			&#first_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/1.jpg);
+			}
+			&#second_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/2.jpg);
+			}
+			&#third_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/3.jpg);
+			}
+			&#fourth_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/4.jpg);
+			}
+			&#fifth_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/5.jpg);
+			}
+			&#sixth_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/6.jpg);
+			}
+			&#seventh_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/7.jpg);
+			}
+			&#eighth_Radio:checked ~ div.image{
+				background-image: url(../images/gallery/8.jpg);
+			}
+		}
+		div.image {
+			display: inline-block;
+			width: 550px;
+			height: 550px;
+			
+			background-repeat: no-repeat;
+			-moz-background-size: cover;
+			-o-background-size: cover ;
+			-webkit-background-size: cover;
+			background-size: cover;
+
+			border: 2px solid grey;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+		}
+	}
+}

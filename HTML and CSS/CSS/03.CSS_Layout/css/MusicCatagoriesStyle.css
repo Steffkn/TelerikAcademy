@@ -1,0 +1,64 @@
+﻿body, header, section, p, input, img, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px;
+    background-color: #fff;
+    font-family: Consolas, 'Times New Roman';
+    font-size: 14px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+
+header p {
+    font-size: 1.2em;
+}
+#musicCategories {
+    padding: 10px;
+    width: 460px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+#musicCategories img {
+    margin-right: 15px;
+    float: left;
+    border: 1px solid #aeaeae;
+}
+
+#musicCategories ul {
+    list-style-type: none;
+}
+
+    #musicCategories ul li {
+        margin: 30px 0;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #aeaeae;
+    }
+
+        #musicCategories ul li div {
+            text-align: right;
+        }
+            #musicCategories ul li div button {
+                margin: 10px 0 0 0;
+                padding: 0 15px;
+                color: white;
+                background-repeat: repeat-y;
+                background-image: url(../images/buttonBG.png);
+                background-color: #f00;
+                border: 1px solid #730000;
+                border-top-color: #e3787b;
+                border-left-color: #8a0000;
+                font-size: 1em;
+            }

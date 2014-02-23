@@ -1,0 +1,80 @@
+﻿body, header, section, div, span, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    margin: 10px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline-block;
+    }
+
+        nav ul li a {
+            color: #00acef;
+        }
+
+header {
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+.wrapper {
+    position: relative;
+}
+
+.laptops {
+    padding: 10px 10px 10px 5px;
+    min-width: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 190px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+    .laptops fieldset {
+        display: inline-block;
+        width: 160px;
+    }
+
+        .laptops fieldset img, .laptops fieldset .price {
+            float: left;
+            width: 70px;
+            text-align: center;
+        }
+
+        .laptops fieldset .properties {
+            float: right;
+            background-color: red;
+        }
+
+            .laptops fieldset .properties div {
+                margin: 5px 0;
+            }
+
+.sliders {
+    float: right;
+    margin: 0 10px;
+    width: 150px;
+    text-align: center;
+}

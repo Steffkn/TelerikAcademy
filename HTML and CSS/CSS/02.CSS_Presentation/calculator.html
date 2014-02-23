@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <link href="css/calculatorStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="#" method="get">
+        <div class="main-container">
+            <div class="main-menu">
+                <ul>
+                    <li><a href="#">View</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="input-container">
+                <div class="screen-container">
+                    <label>0</label>
+                </div>
+
+                <div class="binary-container clearfix">
+                    <div class="binary-numbers left leftSide">
+                        <div class="labels">
+                            <label>0000</label><label>0000</label><label>0000</label><label>0000</label>
+                        </div>
+
+                        <div class="leftSide">63</div>
+
+                        <div class="labels">
+                            <label>0000</label><label>0000</label><label>0000</label><label>0000</label>
+                        </div>
+
+                        <div class="leftSide clearfix">31</div>
+                    </div>
+                    <div class="binary-numbers right rightSide">
+                        <div class="labels">
+                            <label>0000</label><label>0000</label><label>0000</label><label>0000</label>
+                        </div>
+
+                        <div class="leftSide">47</div>
+                        <div class="rightSide">32</div>
+
+                        <div class="labels">
+                            <label>0000</label><label>0000</label><label>0000</label><label>0000</label>
+                        </div>
+
+                        <div class="leftSide">15</div>
+                        <div class="rightSide ">0</div>
+                    </div>
+                </div>
+                <div class="options">
+					<div class="num-system">
+						<ul>
+							<li><input type="radio" name="numsys" /> Hex</li>
+							<li><input type="radio" name="numsys" checked="checked"  /> Ded</li>
+							<li><input type="radio" name="numsys" /> Oct</li>
+							<li><input type="radio" name="numsys" /> Bin</li>
+						</ul>
+					</div>
+					<div class="qword">
+						<ul>
+							<li><input type="radio" name="qword" checked="checked" /> Qword</li>
+							<li><input type="radio" name="qword" /> Dword</li>
+							<li><input type="radio" name="qword" /> Word</li>
+							<li><input type="radio" name="qword" /> Byte</li>
+						</ul>
+					</div>
+				</div>
+                <div class="numpad">
+                    <input class="notActive" type="button" value="" />
+                    <input class="signs " type="button" value="Mod" />
+                    <input class="notActive" type="button" value="A" />
+                    <input class="notActive" type="button" value="MC" />
+                    <input class="notActive" type="button" value="MR" />
+                    <input class="notActive" type="button" value="MS" />
+                    <input class="notActive" type="button" value="M+" />
+                    <input class="notActive" type="button" value="M-" />
+
+                    <input class="signs " type="button" value="(" />
+                    <input class="signs " type="button" value=")" />
+                    <input class="notActive" type="button" value="B" />
+                    <input class="signs " type="button" value="&#8656; ">
+                    <input class="signs " type="button" value="CE" />
+                    <input class="signs " type="button" value="C" />
+                    <input class="signs " type="button" value="+-" />
+                    <input class="notActive" type="button" value="&radic;" />
+
+                    <input class="signs " type="button" value="RoL" />
+                    <input class="signs " type="button" value="RoR" />
+                    <input class="notActive" type="button" value="C" />
+                    <input class="numbers" type="button" value="7" />
+                    <input class="numbers" type="button" value="8" />
+                    <input class="numbers" type="button" value="9" />
+                    <input class="signs " type="button" value="/" />
+                    <input class="notActive" type="button" value="%" />
+
+                    <input class="signs " type="button" value="Or" />
+                    <input class="signs " type="button" value="Xor" />
+                    <input class="notActive" type="button" value="D" />
+                    <input class="numbers" type="button" value="4" />
+                    <input class="numbers" type="button" value="5" />
+                    <input class="numbers" type="button" value="6" />
+                    <input class="signs " type="button" value="*" />
+                    <input class="notActive" type="button" value="1/x" />
+
+                    <input class="signs " type="button" value="Lsh" />
+                    <input class="signs " type="button" value="Rsh" />
+                    <input class="notActive" type="button" value="E" />
+                    <input class="numbers" type="button" value="1" />
+                    <input class="numbers" type="button" value="2" />
+                    <input class="numbers" type="button" value="3" />
+                    <input class="signs " type="button" value="-" />
+                    <input class="signs" type="button" id="equalSign" value="=" />
+
+                    <input class="signs " type="button" value="Not" />
+                    <input class="signs " type="button" value="And" />
+                    <input class="notActive" type="button" value="F" />
+                    <input class="numbers" type="button" style="width: 84px" value="0" />
+                    <input class="notActive" type="button" value="." />
+                    <input class="signs " type="button" value="+" />
+                </div>
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+$default-bg-color1: #9215f2;
+$default-bg-color2: #c78cf3;
+$default-bg-color3: #d593ff;
+$default-inputs-bg-color: #b35ef3;
+$default-text-color: #ffffff;
+$default-border-style: 1px solid #210736;
+$default-border-radius: 15px;
+$default-font-size: 14px;
+
+@mixin linear-gradient($from-color, $from-pos, $to-color, $to-pos,  $end-color, $end-pos){
+	background: $from-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  $from-color $from-pos, $to-color $to-pos, $end-color $end-pos); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color), color-stop($end-pos,$end-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $from-color $from-pos,$to-color $to-pos,$end-color $end-pos); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $from-color $from-pos,$to-color $to-pos,$end-color $end-pos); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $from-color $from-pos,$to-color $to-pos,$end-color $end-pos); /* IE10+ */
+	background: linear-gradient(to bottom,  $from-color $from-pos,$to-color $to-pos,$end-color $end-pos); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+
+}
+
+html,body,  div, header, section, article, footer, aside, nav, ul, li, form, label, input, h1, h2, h3, p{
+	margin: 0;
+	padding: 0;
+}
+
+html ,body {
+	width: 1440px;
+	height: 100%;
+	font-size: $default-font-size;
+	background-color: $default-bg-color1;
+}
+.clearfix {
+	zoom:1;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+		height: 0;
+	}
+}
+
+
+body {
+	color: $default-text-color;
+	& > header{
+	background-color: red;
+	padding: 10px 10px 20px 10px;
+	@include linear-gradient($default-bg-color3, 0% , $default-bg-color2 , 15%, $default-bg-color1 , 100%);
+		div#header-container{
+			@extend .clearfix;
+			div#logo-container{
+				float: left;
+				margin: 12px 3px;
+				h1{
+					a{
+						img{
+							height: 70px;
+						}
+					}
+				}
+			}
+			
+            div#reg-form-container{
+				float: right;
+				form{ 
+					margin-top: 12px;
+					margin-right: 75px;
+					div{
+						text-align: right;
+						label{ 
+							font-size: 0.9em;
+							margin: 3px;
+						}
+						input{
+							margin: 5px;
+							width: 125px;
+							height: 18px;
+							border: 1px solid #7b41a7;
+							border-radius: $default-border-radius;
+							background-color: $default-inputs-bg-color;
+						}
+					}
+					button{
+						margin-top: -1px;
+						padding: 5px 9px;
+						font-size: 0.9em;
+						font-weight: bold;
+						color: $default-text-color;
+						border: 1px outset #7b41a7;
+						border-radius: 10px;
+						background-color: $default-inputs-bg-color;
+					}
+				}
+			}
+		} 
+		}
+		nav{
+			margin-top: 16px;
+			margin-left: 21px;
+			margin-right: 315px;
+			ul{
+				list-style-type: none;
+				padding: 0 15px;
+				border: $default-border-style;
+				border-radius: $default-border-radius;
+				li{
+					position: relative;
+					display: inline-block;
+					& > ul{
+						display: none;
+					}
+					a{
+						font-size: 1.3em;
+						padding: 11px 6px;
+						display: block;
+						text-decoration: none;
+						color: $default-text-color;
+					}
+					ul {
+						position: absolute;
+						top:20px;
+						left: 0;
+						width: 200px;
+						@include linear-gradient($default-bg-color3, 0% , $default-bg-color2 , 25%, $default-bg-color1 , 100%);
+						li{
+							display: block;
+						}
+					}
+					&:hover > ul {
+						display: inline-block;
+					}
+					
+				}
+
+			} 
+		}
+
+	section {
+        width: 75%;
+        float: left;
+        color: black;
+		font-size: 0.9em;
+		article {
+            margin: 20px 18px;
+            padding: 18px;
+            border: 1px solid black;
+            border-radius: 15px;
+            color: #eae8fe;
+			header {
+                background: none;
+                padding: 5px;
+				h1 {
+                    font-size: 1.4em;
+                    padding: 0;
+                }
+            }
+			footer {
+                padding: 5px;
+				p {
+                    font-size: 1.2em;
+                    text-align: right;
+                    font-weight: normal;
+					time {
+                        font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+                    }
+					a {
+                        text-decoration: none;
+                        color: #d4a3f8;
+                    }
+					&:hover {
+                            text-decoration: underline;
+					}
+                }
+            }
+        }
+	}
+	aside {
+        float: left;
+        width: 20%;
+        margin: 18px;
+		 & > ul {
+            list-style-type: none;
+
+            & > li {
+                margin: 15px 0;
+                padding: 12px 13px;
+                border: 1px solid black;
+                border-radius: 5px;
+				 h2 {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+                 p {
+                    margin-top: 10px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    font-size: 12px;
+					a {
+                        color: #aaaaaa;
+                        text-decoration: none;
+                    }
+					strong {
+                        color: #cccccc;
+                        font-weight: bold;
+                        font-style: normal;
+                    }
+					em {
+                        color: #cccccc;
+                        font-weight: normal;
+                        font-style: italic;
+                    }
+                }
+				ul {
+                    list-style-type: none;
+                    margin-top: 10px;
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    margin-left: 0px; 
+					li {
+                        margin-top: 5px;
+                        margin-left: 10px;
+                        margin-bottom: 0px;
+                        margin-right: 0px;
+                        background: url(../images/li-dot.png) no-repeat;
+                        background-position: 0 50%;
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+	}
+	footer {
+        clear: both;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        padding-right: 0px;
+        padding-left: 0px;
+		font-size: 0.9em;
+        text-align: center;
+			p {
+            font-size: 1.2em;
+            font-weight: bold;
+			}
+
+    }
+}
+
+	

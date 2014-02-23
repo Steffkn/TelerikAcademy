@@ -1,0 +1,32 @@
+﻿body, ul {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Times New Roman';
+}
+
+    body nav > ul {
+        display: block;
+    }
+
+ul {
+    list-style-type: none;
+    display: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+ul li ul li a {
+    color: #95929b;
+}
+
+ul > li:hover > ul {
+    margin: 0 0 0 15px;
+    display: block;
+}
