@@ -1,0 +1,143 @@
+﻿
+
+html, body, section, nav, aside, header, footer, ul, li, a ,p {
+    margin: 0;
+    padding: 0;
+}
+
+@main-color: #f5f5f5;
+@nav-color: #333333;
+@font-size: 12px;
+@font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+.linear-gradient(@color) {
+    background: @color;
+    background: -moz-linear-gradient(top, darken(@color , 9%) 0%, @color 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,darken(@color , 9%)), color-stop(100%,@color));
+    background: -webkit-linear-gradient(top, darken(@color , 9%) 0%,@color 100%);
+    background: -o-linear-gradient(top, darken(@color , 9%) 0%,@color 100%);
+    background: -ms-linear-gradient(top, darken(@color , 9%) 0%,@color 100%);
+    background: linear-gradient(to bottom, darken(@color , 9%) 0%,@color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color', endColorstr='darken(@color , 9%)',GradientType=0 );
+}
+
+html body {
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    font-family: @font-family;
+
+    div#main-wrapper {
+        width: 960px;
+        margin: 100px auto;
+        font-size: @font-size;
+        font-weight: bold;
+        border: 1px solid #575757;
+        border-radius: 3px;
+
+        header {
+            nav {
+                .linear-gradient(@main-color);
+
+                ul {
+                    list-style-type: none;
+                    display: block;
+                    text-align: center;
+                    border-bottom: 1px solid #cccccc;
+
+                    li {
+                        position: relative;
+                        display: inline-block;
+                        margin-bottom: -1px;
+
+                        a {
+                            display: block;
+                            padding: 10px 15px;
+                            color: @nav-color;
+                            text-decoration: none;
+                            a:active, a:focus {
+                                outline: none;
+                            }
+                            &:hover {
+                                color: lighten(@nav-color, 10%);
+                            }
+                        }
+
+                        &:before {
+                            position: absolute;
+                            top: 8px;
+                            left: -1px;
+                            height: 20px;
+                            width: 1px;
+                            background-color: #3b3b3b;
+                            content: " ";
+                        }
+
+                        &:after {
+                            position: absolute;
+                            top: 8px;
+                            right: -1px;
+                            height: 20px;
+                            width: 1px;
+                            background-color: #f5f5f5;
+                            content: " ";
+                        }
+
+                        &:first-of-type {
+                            &:before {
+                                width: 0px;
+                            }
+                        }
+
+                        &:last-of-type {
+                            &:after {
+                                width: 0px;
+                            }
+                        }
+
+                        &.selected {
+                            position: relative;
+                            background-color: #5d5d5d;
+                            border: 1px solid #3b3b3b;
+                            background-repeat: no-repeat;
+                            background-position: bottom center;
+                            
+                            &:before {
+                                width: 0px;
+                            }
+                            &:after {
+                                width: 0px;
+                            }
+                            a {
+                                div.arrow {
+                                    height: 5px;
+                                    width: 10px;
+                                    position: absolute;
+                                    bottom: -1px;
+                                    left: 42%;
+                                    background-image: url(../images/arrow.png);
+                                }
+                            }
+
+
+                            a {
+                                border: 0;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            height: 300px;
+            background-color: white;
+        }
+        footer{
+            padding: 10px;
+            text-align:center;
+            border-top: 1px solid #cccccc;
+            background-color: #f5f5f5;
+        }
+    }
+}

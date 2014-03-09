@@ -1,0 +1,93 @@
+﻿html, body, table, tfoot, thead, tbody, tr, td, th {
+    margin: 0;
+    padding: 0;
+}
+@header-color: #45224e; //#023f5a
+@footer-color: #aaaaaa;
+@odd-row-color:  #222222;
+@even-row-color:  #171717;
+@font-color: #ffffff;
+@link-color: #ffcc00;
+@font-size: 14px;
+@font-family: 'Open Sans',Arial;
+
+.linear-gradient(@color){
+    background: @color;
+    background: -moz-linear-gradient(top,  lighten(@color, 1%) 0%, lighten(@color, 6%) 4%, lighten(@color, 10%) 8%, lighten(@color, 12%) 12%, lighten(@color, 13%) 15%, lighten(@color, 14%) 23%, @color 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten(@color, 1%)), color-stop(4%,lighten(@color, 6%)), color-stop(8%,lighten(@color, 10%)), color-stop(12%,lighten(@color, 12%)), color-stop(15%,lighten(@color, 13%)), color-stop(23%,lighten(@color, 14%)), color-stop(100%,@color));
+    background: -webkit-linear-gradient(top,  lighten(@color, 1%) 0%,lighten(@color, 6%) 4%,lighten(@color, 10%) 8%,lighten(@color, 12%) 12%,lighten(@color, 13%) 15%,lighten(@color, 14%) 23%,@color 100%);
+    background: -o-linear-gradient(top,  lighten(@color, 1%) 0%,lighten(@color, 6%) 4%,lighten(@color, 10%) 8%,lighten(@color, 12%) 12%,lighten(@color, 13%) 15%,lighten(@color, 14%) 23%,@color 100%);
+    background: -ms-linear-gradient(top,  lighten(@color, 1%) 0%,lighten(@color, 6%) 4%,lighten(@color, 10%) 8%,lighten(@color, 12%) 12%,lighten(@color, 13%) 15%,lighten(@color, 14%) 23%,@color 100%);
+    background: linear-gradient(to bottom,  lighten(@color, 1%) 0%,lighten(@color, 6%) 4%,lighten(@color, 10%) 8%,lighten(@color, 12%) 12%,lighten(@color, 13%) 15%,lighten(@color, 14%) 23%,@color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color', endColorstr='@color',GradientType=0 );
+
+}
+
+
+.border-radius() {
+}
+body {
+    font-size: @font-size;
+    font-family: @font-family;
+
+    table {
+        margin: 10px;
+        border-spacing: 0;
+        border: 1px solid #111111;
+        border-right: 0;
+
+        thead {
+            .linear-gradient(@header-color);
+
+            tr {
+                th {
+                    padding:5px 10px ;
+                    color: @font-color;
+                    font-size: 1em;
+                    font-weight: normal;
+                    border-right: 1px solid rgba(0,0,0,0.4);
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(2n) {
+                    background-color: @even-row-color;
+                }
+
+                &:nth-child(2n + 1) {
+                    background-color: @odd-row-color;
+                }
+
+                td {
+                    padding: 5px;
+                    border-right: 1px solid rgba(0,0,0,0.4);
+                    border-top: 1px solid #111111;
+                    color: @font-color;
+                    a {
+                        text-decoration: none;
+                        color: @link-color;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        tfoot {
+            .linear-gradient(@footer-color);
+
+            tr {
+                td {
+                    padding: 5px;
+                    border-right: 1px solid rgba(0,0,0,0.4);
+                    border-top: 1px solid #111111;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Training so far...</title>
+    <link href="css/TrainingMenu.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.0.js"></script>
+	<script>
+	    $(function onDocumentReady() {
+	        $("header nav > ul > li.test > a").on("click", function onNavItemClick(e) {
+	            if (!$(this).parent().hasClass("selected")) {
+	                $("header nav ul li.selected").removeClass("selected");
+	                $(this).parent().addClass("selected");
+	            }
+
+	            if (e.preventDefaults) {
+	                e.preventDefaults();
+	            }
+	            return false;
+	        });
+	    });
+	    $(function onDocumentReady() {
+	        $("div.filter > ul > li > a").on("click", function onNavItemClick(e) {
+	            if (!$(this).parent().hasClass("selected")) {
+	                $("div.filter  ul li.selected").removeClass("selected");
+	                $(this).parent().addClass("selected");
+	            }
+
+	            if (e.preventDefaults) {
+	                e.preventDefaults();
+	            }
+	            return false;
+	        });
+	    });
+	</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="selected test"><a href="training.html">This menu</a>
+                </li><li class="test">
+                    <a href="training.html">This menu</a>
+                </li><li>
+                    <a href="WrapperWithNavFooter/WrapperWithNavFooter.html">Wrapper With Nav Footer</a>
+                </li><li>
+                    <a href="HorizontalMenu2/horizontalMenu2.html">Horizontal Menu 1</a>
+                </li><li>
+                    <a href="HorizontalMenu/HorizontalMenu.html">Horizontal Menu 2</a>
+                </li><li>
+                    <a href="FancyTables/FancyTables.html">Fancy Table</a>
+                </li><li>
+                    <a href="DropDown/DropDown.html">Drop Down</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="filter">
+        <ul>
+            <li class="selected"><a href="#">Popular</a></li>
+            <li><a href="#">Nice</a></li>
+            <li><a href="#">Illigal</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+html,
+body,
+nav,
+div,
+ul,
+li,
+a,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+html body nav {
+  background-color: #2d2d2d;
+}
+html body nav div {
+  position: relative;
+  display: inline-block;
+  margin-left: 100px;
+}
+html body nav div a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+html body nav div a a:active,
+html body nav div a a:focus {
+  outline: none;
+}
+html body nav div a h1 {
+  padding: 5px 20px 5px 5px;
+  display: inline-block;
+}
+html body nav div:hover {
+  background-color: #1e1e1e;
+}
+html body nav div:hover ul {
+  display: block;
+}
+html body nav div ul {
+  position: absolute;
+  display: none;
+  min-width: 100%;
+  list-style-type: none;
+  background-color: #1e1e1e;
+  border-radius: 0 0 3px 3px;
+}
+html body nav div ul li {
+  margin: 5px;
+}
+html body nav div ul li:hover {
+  border-radius: 3px;
+  background-color: #333;
+}
+html body nav div span.drop-icon {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  height: 16px;
+  width: 16px;
+  background-image: url(../images/icon-chevron-down.png);
+  background-repeat: no-repeat;
+}

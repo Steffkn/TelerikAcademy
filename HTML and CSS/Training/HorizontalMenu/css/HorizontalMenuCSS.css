@@ -1,0 +1,40 @@
+html, body, div, nav, ul, li, a
+{
+	margin: 0;
+	padding: 0;
+}
+nav > ul li{
+	position: relative;
+	display: inline-block;
+}
+ul{
+	list-style-type: none;
+	background-color: grey;
+}
+
+ul li > ul li{
+	display: block;
+	background-color: red;
+}
+
+ul li a{
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+}
+
+li:hover > ul{
+	display:block;
+}
+
+ul li > ul {
+	display:none;
+	position: absolute;
+	top: 20px;
+}
+ul li > ul li ul{
+	display:none;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}

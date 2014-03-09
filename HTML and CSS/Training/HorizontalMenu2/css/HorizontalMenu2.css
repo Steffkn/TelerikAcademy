@@ -1,0 +1,139 @@
+#menu1 *
+{
+    margin: 0;
+    padding: 0;
+}
+
+#menu1 ul.menu
+{
+    float: left;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu1 ul.menu li
+{
+    position: relative;
+    float: left;
+    list-style-type: none;
+}
+
+#menu1 ul.menu li a
+{
+    position: relative;
+    display: block;
+    line-height: 21px;
+    font-size: 14px;
+    padding: 14px 21px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+#menu1 ul.menu > li:first-child > a
+{
+    border-left: 0;
+}
+
+#menu1 ul.menu > li:last-child > a
+{
+    border-right: 0;
+}
+
+/** Sub Menu - Tier 2 **/
+.sub-menu li { float: none !important; }
+#menu1 ul.menu li ul.sub-menu
+{
+    position: relative;
+    display: none;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    white-space: nowrap;
+}
+
+#menu1 ul.menu li:hover ul.sub-menu
+{
+    display: block;
+    float: left;
+    position: absolute;
+    z-index: 200;
+}
+
+#menu1 ul.menu li ul.sub-menu > li:first-child
+{
+    margin: 5px 0 0 0;
+}
+
+#menu1 ul.menu li ul.sub-menu li a
+{
+    display: block;
+}
+
+#menu1 ul.menu li ul.sub-menu li:first-child > a
+{
+    border-top: 0;
+}
+
+#menu1 ul.menu li ul.sub-menu li:last-child > a
+{
+    border-bottom: 0;
+}
+
+/** Sub Menu - Tier 3 **/
+
+#menu1 ul.menu li ul.sub-menu li ul
+{
+    position: relative;
+    display: none;
+    left: 100%;
+}
+
+#menu1 ul.menu li ul.sub-menu li ul li
+{
+    margin: 0 0 0 5px;
+}
+
+#menu1 ul.menu li ul.sub-menu li:hover ul
+{
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+}
+
+#menu1 ul.menu li ul.sub-menu li ul li a
+{
+    width: 140px;
+    display: block;
+}
+
+a:active {
+    outline: none;
+}
+/** Colour Styles **/
+
+#menu1 ul.menu li a
+{
+    background: #09F;
+    color: #FFF;
+}
+
+#menu1 ul.menu > li > a
+{
+    border-left: 1px solid #26A8FF;
+    border-right: 1px solid #0082D9;
+}
+
+#menu1 ul.menu li:hover > a, #menu1 ul.menu li a:hover
+{
+    color: #09F;
+    background: #ddd;
+}
+
+#menu1 ul.menu li ul.sub-menu li a
+{
+    border-top: 1px solid #26A8FF;
+    border-bottom: 1px solid #0082D9;
+}

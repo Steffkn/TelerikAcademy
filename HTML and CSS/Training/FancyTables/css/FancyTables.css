@@ -1,0 +1,73 @@
+html,
+body,
+table,
+tfoot,
+thead,
+tbody,
+tr,
+td,
+th {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', Arial;
+}
+body table {
+  margin: 10px;
+  border-spacing: 0;
+  border: 1px solid #111111;
+  border-right: 0;
+}
+body table thead {
+  background: #45224e;
+  background: -moz-linear-gradient(top, #482452 0%, #582b63 4%, #643172 8%, #6b3579 12%, #6e367c 15%, #713880 23%, #45224e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #482452), color-stop(4%, #582b63), color-stop(8%, #643172), color-stop(12%, #6b3579), color-stop(15%, #6e367c), color-stop(23%, #713880), color-stop(100%, #45224e));
+  background: -webkit-linear-gradient(top, #482452 0%, #582b63 4%, #643172 8%, #6b3579 12%, #6e367c 15%, #713880 23%, #45224e 100%);
+  background: -o-linear-gradient(top, #482452 0%, #582b63 4%, #643172 8%, #6b3579 12%, #6e367c 15%, #713880 23%, #45224e 100%);
+  background: -ms-linear-gradient(top, #482452 0%, #582b63 4%, #643172 8%, #6b3579 12%, #6e367c 15%, #713880 23%, #45224e 100%);
+  background: linear-gradient(to bottom, #482452 0%, #582b63 4%, #643172 8%, #6b3579 12%, #6e367c 15%, #713880 23%, #45224e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color', endColorstr='@color', GradientType=0);
+}
+body table thead tr th {
+  padding: 5px 10px ;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: normal;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+body table tbody tr:nth-child(2n) {
+  background-color: #171717;
+}
+body table tbody tr:nth-child(2n + 1) {
+  background-color: #222222;
+}
+body table tbody tr td {
+  padding: 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-top: 1px solid #111111;
+  color: #ffffff;
+}
+body table tbody tr td a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+body table tbody tr td a:hover {
+  text-decoration: underline;
+}
+body table tfoot {
+  background: #aaaaaa;
+  background: -moz-linear-gradient(top, #adadad 0%, #b9b9b9 4%, #c3c3c3 8%, #c9c9c9 12%, #cbcbcb 15%, #cecece 23%, #aaaaaa 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #adadad), color-stop(4%, #b9b9b9), color-stop(8%, #c3c3c3), color-stop(12%, #c9c9c9), color-stop(15%, #cbcbcb), color-stop(23%, #cecece), color-stop(100%, #aaaaaa));
+  background: -webkit-linear-gradient(top, #adadad 0%, #b9b9b9 4%, #c3c3c3 8%, #c9c9c9 12%, #cbcbcb 15%, #cecece 23%, #aaaaaa 100%);
+  background: -o-linear-gradient(top, #adadad 0%, #b9b9b9 4%, #c3c3c3 8%, #c9c9c9 12%, #cbcbcb 15%, #cecece 23%, #aaaaaa 100%);
+  background: -ms-linear-gradient(top, #adadad 0%, #b9b9b9 4%, #c3c3c3 8%, #c9c9c9 12%, #cbcbcb 15%, #cecece 23%, #aaaaaa 100%);
+  background: linear-gradient(to bottom, #adadad 0%, #b9b9b9 4%, #c3c3c3 8%, #c9c9c9 12%, #cbcbcb 15%, #cecece 23%, #aaaaaa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color', endColorstr='@color', GradientType=0);
+}
+body table tfoot tr td {
+  padding: 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-top: 1px solid #111111;
+}

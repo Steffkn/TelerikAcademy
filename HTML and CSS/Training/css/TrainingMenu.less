@@ -1,0 +1,97 @@
+﻿html, body, div, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+@main-color: #2c2c2c;
+@second-color: #ff7f00;
+@text-color: #dddddd;
+
+@font-family: Oswald,arial,Georgia,serif;
+@font-size: 16px;
+
+html body {
+    header {
+        nav {
+            text-transform: uppercase;
+            font-family: @font-family;
+            font-size: @font-size;
+            font-weight: bold;
+            background-color: @main-color;
+            border-bottom: 5px solid @second-color;
+
+            ul {
+                list-style-type: none;
+                display: inline-block;
+
+                li {
+                    display: inline-block;
+                    border-right: 1px solid #191919;
+                    border-left: 1px solid rgba(225,255,255,0.05);
+
+                    a {
+                        display: block;
+                        padding: 15px;
+                        color: @text-color;
+                        text-decoration: none;
+                        text-shadow: 0px 1px 1px #000;                            
+                        a:active {
+                            outline: none;
+                        }
+                        &:hover {
+                            color: lighten(@text-color, 20%);
+                        }
+                    }
+
+                    &.selected {
+                        background-color: @second-color;
+
+                        a {
+                            color: @text-color;
+                        }
+                    }
+
+                    &:first-of-type {
+                        border-left: 0;
+                    }
+
+                    &:last-of-type {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    div.filter {
+        margin: 50px;
+        font-family: @font-family;
+        font-size: @font-size;
+        font-weight: bold;
+
+        ul {
+            list-style-type: none;
+            width: 200px;
+
+            li {
+                a {
+                    display: block;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: @text-color;
+                    background-color: @main-color;
+
+                    &:hover {
+                        background-color: lighten(@main-color, 10%);
+                    }
+                }
+
+                &.selected {
+                    a {
+                        background-color: @second-color;
+                    }
+                }
+            }
+        }
+    }
+}
