@@ -7,8 +7,6 @@ class BinarySearchIntExample
 {
     static void Main()
     {
-
-
         int[] sortedArray = { 1, 3, 8, 9, 13, 15, 16, 18, 24, 27, 
                               29, 31, 34, 36, 39, 42, 44, 47, 48, 50 };
 
@@ -26,7 +24,6 @@ class BinarySearchIntExample
 
         while (true)
         {
-
             if (sortedArray[mid] == choice)
             {
                 Console.WriteLine("The index of {0} is {1}", choice, mid);

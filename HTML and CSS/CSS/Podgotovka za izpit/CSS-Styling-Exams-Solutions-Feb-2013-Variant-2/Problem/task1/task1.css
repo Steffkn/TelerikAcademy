@@ -1,0 +1,138 @@
+﻿html, body, div, tbody, thead, ul, li, table, th, tr, td, a, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+    body div#wrapper {
+        width: 960px;
+        padding: 50px;
+    }
+
+body {
+    font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+    ul li div {
+        display: none;
+    }
+
+
+
+ul.accordion {
+    display: inline-block;
+}
+
+    ul.accordion li {
+        text-align: center;
+        width: 398px;
+        border: 1px solid black;
+        o verflow: hidden;
+    }
+
+        ul.accordion li.current div {
+            display: block;
+        }
+
+        ul.accordion li a.accordion-btn {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #444;
+            background: rgb(238,238,238); /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(238,238,238,1) 22%, rgba(235,235,235,1) 26%, rgba(172,172,172,1) 74%, rgba(170,170,170,1) 78%, rgba(170,170,170,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(22%,rgba(238,238,238,1)), color-stop(26%,rgba(235,235,235,1)), color-stop(74%,rgba(172,172,172,1)), color-stop(78%,rgba(170,170,170,1)), color-stop(100%,rgba(170,170,170,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,1) 22%,rgba(235,235,235,1) 26%,rgba(172,172,172,1) 74%,rgba(170,170,170,1) 78%,rgba(170,170,170,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,1) 22%,rgba(235,235,235,1) 26%,rgba(172,172,172,1) 74%,rgba(170,170,170,1) 78%,rgba(170,170,170,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,1) 22%,rgba(235,235,235,1) 26%,rgba(172,172,172,1) 74%,rgba(170,170,170,1) 78%,rgba(170,170,170,1) 100%); /* IE10+ */
+            background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(238,238,238,1) 22%,rgba(235,235,235,1) 26%,rgba(172,172,172,1) 74%,rgba(170,170,170,1) 78%,rgba(170,170,170,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#aaaaaa',GradientType=0 ); /* IE6-8 */
+        }
+
+        ul.accordion li div.accordion-content {
+            width: 368px;
+            height: 100%;
+            padding: 5px 15px 5px 15px;
+            background-color: #aaa;
+            text-align: left;
+            color: #444;
+        }
+
+            ul.accordion li div.accordion-content h1 {
+                text-align: center;
+                padding: 5px 0;
+                font-size: 1.6em;
+                color: #5e5e5e;
+            }
+
+            ul.accordion li div.accordion-content p {
+                font-size: 1em;
+                color: #444444;
+                text-align: justify;
+            }
+            ul.accordion li div.accordion-content table {
+                margin: 15px 0 15px 6px;
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+
+            ul.accordion li div.accordion-content table thead tr th {
+                padding: 5px;
+                font-size: 1.0em;
+                font-weight: bold;
+                border: 1px solid #000000;
+                color: #444;
+                background: rgb(236,236,236); /* Old browsers */
+                background: -moz-linear-gradient(top,  rgba(236,236,236,1) 0%, rgba(137,137,137,1) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(236,236,236,1)), color-stop(100%,rgba(137,137,137,1))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  rgba(236,236,236,1) 0%,rgba(137,137,137,1) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  rgba(236,236,236,1) 0%,rgba(137,137,137,1) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  rgba(236,236,236,1) 0%,rgba(137,137,137,1) 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  rgba(236,236,236,1) 0%,rgba(137,137,137,1) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#898989',GradientType=0 ); /* IE6-8 */
+
+                }
+
+                ul.accordion li div.accordion-content table thead tr th:first-of-type {
+                    border-radius: 15px 0 0 0;
+                }
+
+            ul.accordion li div.accordion-content table tbody tr td {
+                padding: 5px;
+                border: 1px solid #000000;
+                color: #ffffff;
+            }
+
+                ul.accordion li div.accordion-content table tbody tr:nth-child(2n) td {
+                    background: rgb(137,137,137); /* Old browsers */
+                    background: -moz-linear-gradient(top, rgba(137,137,137,1) 0%, rgba(203,203,203,1) 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(137,137,137,1)), color-stop(100%,rgba(203,203,203,1))); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top, rgba(137,137,137,1) 0%,rgba(203,203,203,1) 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top, rgba(137,137,137,1) 0%,rgba(203,203,203,1) 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top, rgba(137,137,137,1) 0%,rgba(203,203,203,1) 100%); /* IE10+ */
+                    background: linear-gradient(to bottom, rgba(137,137,137,1) 0%,rgba(203,203,203,1) 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#cbcbcb',GradientType=0 ); /* IE6-8 */
+                }
+            ul.accordion li div.accordion-content table tbody tr:nth-child(2n+1) td {
+                padding: 5px;
+                border: 1px solid #000000;
+                color: #ffffff;
+                background: rgb(203,203,203); /* Old browsers */
+                background: -moz-linear-gradient(top, rgba(203,203,203,1) 0%, rgba(137,137,137,1) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(203,203,203,1)), color-stop(100%,rgba(137,137,137,1))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(203,203,203,1) 0%,rgba(137,137,137,1) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(203,203,203,1) 0%,rgba(137,137,137,1) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, rgba(203,203,203,1) 0%,rgba(137,137,137,1) 100%); /* IE10+ */
+                background: linear-gradient(to bottom, rgba(203,203,203,1) 0%,rgba(137,137,137,1) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcbcb', endColorstr='#898989',GradientType=0 ); /* IE6-8 */
+            }

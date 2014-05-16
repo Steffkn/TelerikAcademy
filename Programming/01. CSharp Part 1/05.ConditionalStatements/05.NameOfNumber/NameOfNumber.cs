@@ -12,7 +12,7 @@ class NameOfNumber
     static void Main()
     {
         int number;
-        string[] thousandMilian = { " thousand ", " milian " };
+        string[] thousandMilian = { " thousand ", " million " };
 
         Console.WriteLine("Enter an integer");
         // a valid integer is needed

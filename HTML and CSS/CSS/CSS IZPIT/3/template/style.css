@@ -1,0 +1,84 @@
+html, body, div, img, button, ul, li{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: 'Times New Roman';
+}
+#root {
+  width: 700px;
+  padding: 3px 5px;
+}
+ul {
+    list-style-type: none;
+}
+#previewer{
+    clear: both;
+}
+#large {
+    float: left;
+    border: 2px solid #999;
+    text-align: center;
+}
+#large img{
+    margin: 0 21px 15px 15px;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+#list {
+    float: left;
+    width: 200px;
+    border: 2px solid #999;
+}
+    #list strong.title {
+        padding: 5px;
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #list button{
+        width: 98px;
+        height: 51px;
+        border: 2px solid #999;
+        font-size: 1.1em;
+        background-color: #ccc;
+        border-radius: 5px;
+        font-weight: 100;
+    }
+        #list button:hover {
+        background-color: #e6e6e6;
+        }
+    #list ul {
+        overflow: auto;
+        height: 310px;
+    }
+    #list ul li {
+        margin: 5px;
+        margin-bottom: -3px;
+        text-align: center;
+        box-shadow: #999 0 2px;
+
+    }
+        #list ul li:hover strong {
+            text-decoration: underline;
+        }
+        #list ul li strong{
+            display: block;
+            padding: 5px;
+        }
+        #list ul li.current {
+        background-color: #ccc;
+        border-radius: 5px;
+        }
+        #list ul li.current img{
+            margin: 5px;
+            width: 65px;
+            height: 43px;
+        }
+        #list ul li img{
+            margin: 5px;
+            width: 100px;
+            height: 66px;
+            border-radius: 5px;
+        }

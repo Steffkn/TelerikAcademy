@@ -1,0 +1,90 @@
+html, body, div, form, fieldset, legend, input{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+body div#wrapper{
+    width: 960px;
+}
+
+form {
+    display: block;
+    padding: 15px;
+    margin: 25px;
+    width: 380px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    text-align: right;
+
+    background: -moz-linear-gradient(top,  rgba(104,209,255,1) 0%, rgba(140,255,251,0.78) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(104,209,255,1)), color-stop(100%,rgba(140,255,251,0.78)));
+    background: -webkit-linear-gradient(top,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+    background: -o-linear-gradient(top,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+    background: -ms-linear-gradient(top,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+    background: linear-gradient(to bottom,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68d1ff', endColorstr='#c78cfffb',GradientType=0 );
+
+}
+
+form fieldset {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 3px solid #333;
+    text-align: right;
+}
+
+    form fieldset legend{
+        padding: 0 15px;
+        font-size: 1.3em;
+        font-style: italic;
+    }
+
+    form fieldset input{
+        margin: 1px 0 0 0;
+        padding: 0 0 0 15px;
+        width: 164px;
+        border-radius: 5px;
+        border: 1px solid #008fce;
+        line-height: 26px;
+
+        background: -moz-linear-gradient(top,  rgba(104,209,255,1) 0%, rgba(140,255,251,0.78) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(104,209,255,1)), color-stop(100%,rgba(140,255,251,0.78)));
+        background: -webkit-linear-gradient(top,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+        background: -o-linear-gradient(top,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+        background: -ms-linear-gradient(top,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+        background: linear-gradient(to bottom,  rgba(104,209,255,1) 0%,rgba(140,255,251,0.78) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68d1ff', endColorstr='#c78cfffb',GradientType=0 );
+    }
+        form fieldset input#tb-age {
+            width: 40px;
+            padding: 0 0 0 5px;
+        }
+        form input[type=radio] {
+            margin: 7px 0;
+        }
+        form button, form input[type=reset] {
+            margin: 11px 0 1px 0;
+            padding: 7px 15px; 
+            font-size: 1.2em;
+            line-height: 100%;
+            outline: 0 none;
+            border: none;
+            border-radius: 5px;
+            box-shadow: black 0 1px;
+            color: #333;
+            background: rgb(105,210,255);
+            background: -moz-linear-gradient(top,  rgba(105,210,255,1) 0%, rgba(139,254,251,1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(105,210,255,1)), color-stop(100%,rgba(139,254,251,1)));
+            background: -webkit-linear-gradient(top,  rgba(105,210,255,1) 0%,rgba(139,254,251,1) 100%);
+            background: -o-linear-gradient(top,  rgba(105,210,255,1) 0%,rgba(139,254,251,1) 100%);
+            background: -ms-linear-gradient(top,  rgba(105,210,255,1) 0%,rgba(139,254,251,1) 100%);
+            background: linear-gradient(to bottom,  rgba(105,210,255,1) 0%,rgba(139,254,251,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2ff', endColorstr='#8bfefb',GradientType=0 );
+
+        }

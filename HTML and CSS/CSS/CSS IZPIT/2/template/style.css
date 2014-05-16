@@ -1,0 +1,81 @@
+html, body, div, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div#wrapper {
+    width: 960px;
+}
+
+div.content, div.content ul.sub-menu img {
+    display: none;
+}
+
+ul.menu {
+    display: block;
+    margin: 7px 5px;
+    width: 170px;
+}
+
+    ul.menu li a {
+        display: inline-block;
+        padding: 10px 30px;
+        color: #000000;
+    }
+
+    ul.menu li {
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        background-color: #b6ff00;
+        text-align: center;
+    }
+
+        ul.menu li a:hover {
+            text-decoration: underline;
+        }
+
+        ul.menu li:hover div {
+            display: inline-block;
+            position: absolute;
+            left: 170px;
+            top: 0;
+        }
+
+ul.sub-menu li {
+    width: 540px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #008000;
+}
+
+    ul.sub-menu li a {
+        padding: 20px;
+        display: block;
+        color: white;
+    }
+
+div.content ul.sub-menu li:hover {
+    padding-bottom: 20px;
+}
+
+    div.content ul.sub-menu li:hover img {
+        display: block;
+        width: 500px;
+        height: 260px;
+        margin: -10px 20px 0 20px;
+        border-radius: 10px;
+    }

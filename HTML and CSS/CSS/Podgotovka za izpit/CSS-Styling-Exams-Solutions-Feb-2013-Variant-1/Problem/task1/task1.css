@@ -1,0 +1,86 @@
+html, body, aside, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+    body div#wrapper {
+        width: 960px;
+    }
+
+    html body {
+        font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+        font-size: 16px;
+    }
+
+aside {
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    border-radius: 10px;
+}
+
+    ul > li {
+        padding: 5px 14px 5px 15px;
+        margin-right: -1px;
+        border-bottom: 1px solid #9d00ff;
+    }
+
+        ul > li:last-of-type {
+            border: none;
+        }
+
+    ul li:hover, ul.sidebar > li:hover:last-of-type {
+        border: 1px solid #9d00ff;
+        border-radius: 5px;
+    }
+
+    ul.sidebar {
+        background: #d29bff; /* Old browsers */
+        background: -moz-linear-gradient(top, #d29bff 0%, #8977ff 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d29bff), color-stop(100%,#8977ff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #d29bff 0%,#8977ff 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #d29bff 0%,#8977ff 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #d29bff 0%,#8977ff 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #d29bff 0%,#8977ff 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d29bff', endColorstr='#8977ff',GradientType=0 ); /* IE6-9 */
+        display: inline-block;
+        padding: 5px 0px;
+    }
+
+        ul.sidebar > li {
+            margin:0 15px;
+        position: relative;
+        }
+
+            ul.sidebar > li a {
+                font-size: 1.4em;
+            }
+
+        ul.sidebar li:hover ul {
+            display: block;
+            position: absolute;
+            left: 205px;
+            top: 1px;
+            background: #b5aaff;
+            width: 230px;
+            padding:5px 0;
+        }
+
+            ul.sidebar li:hover ul li {
+                display: inline-block;
+                margin-left:20px;
+              
+            }
+
+                ul.sidebar li:hover ul li a {
+                    font-size: 1.1em;
+                   }
+

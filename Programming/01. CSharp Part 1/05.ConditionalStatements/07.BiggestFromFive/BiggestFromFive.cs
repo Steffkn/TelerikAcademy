@@ -11,7 +11,7 @@ class BiggestFromFive
         // loop 5 times
         for( int i = 0; i < 5; i++ )
         {
-            // if invalit number is given 
+            // if invalid number is given 
             if( !double.TryParse(Console.ReadLine(), out number) )
             {
                 Console.WriteLine("Invalid value!");

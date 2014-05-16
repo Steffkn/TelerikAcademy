@@ -1,0 +1,67 @@
+html, body, div, header, article, p,h1, ul, li{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+	font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    display: inline;
+}
+div#archive{
+    float: right;
+}
+div#archive ul li a{
+    margin: 0 5px;
+    font-size: 10px;
+    color: #333333;
+}
+div#header{
+    padding: 15px;
+    background-image: url(./images/topnav_divider.png);
+    background-repeat: repeat-x;
+
+}
+div#header nav{
+    float: left;
+}
+div#header h1{
+    text-align: right;
+    color: white;
+}
+#nav ul{
+    padding: 5px 25px;
+}
+
+#nav ul li a{
+    margin: 0 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+}
+
+
+div#content h1{
+    padding: 16px 0;
+    font-size: 24px;
+    color: #333333;
+}
+div#content article p{
+    padding-bottom: 15px;
+    text-align:justify;
+    color: #333333;
+    font-weight: 300;
+}

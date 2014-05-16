@@ -1,0 +1,110 @@
+﻿html, body, div, ul, li, a, h1, strong, p, span, img {
+    margin: 0;
+    padding: 0;
+}
+
+    body div#wrapper {
+        width: 960px;
+        padding: 31px 25px;
+    }
+
+body {
+    font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a img {
+        width: 15px;
+    }
+
+ul {
+    position: relative;
+    display: block;
+}
+
+    ul li {
+        display: inline;
+        list-style-type: none;
+    }
+
+    ul.notification-list {
+        display: inline-block;
+        width: 500px;
+    }
+
+        ul.notification-list > li {
+            border: 1px solid #000000;
+            border-right: none;
+            padding: 7px 4px 5px 15px;
+            background: rgb(171,171,171);
+            background: -moz-linear-gradient(top, rgba(171,171,171,1) 0%, rgba(221,221,221,1) 83%, rgba(221,221,221,1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(171,171,171,1)), color-stop(83%,rgba(221,221,221,1)), color-stop(100%,rgba(221,221,221,1)));
+            background: -webkit-linear-gradient(top, rgba(171,171,171,1) 0%,rgba(221,221,221,1) 83%,rgba(221,221,221,1) 100%);
+            background: -o-linear-gradient(top, rgba(171,171,171,1) 0%,rgba(221,221,221,1) 83%,rgba(221,221,221,1) 100%);
+            background: -ms-linear-gradient(top, rgba(171,171,171,1) 0%,rgba(221,221,221,1) 83%,rgba(221,221,221,1) 100%);
+            background: linear-gradient(to bottom, rgba(171,171,171,1) 0%,rgba(221,221,221,1) 83%,rgba(221,221,221,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ababab', endColorstr='#dddddd',GradientType=0 );
+        }
+
+            ul.notification-list > li:first-of-type {
+                border-radius: 15px 0 0 0;
+            }
+
+            ul.notification-list > li:last-of-type {
+                border-radius: 0 15px 0 0;
+                padding-right: 18px;
+                border-right: 1px solid #000000;
+            }
+
+            ul.notification-list > li:hover {
+                border-bottom: 1px solid #dddddd;
+            }
+
+        ul.notification-list li:hover div.content {
+            display: inline;
+            background: rgb(221,221,221);
+            background: -moz-linear-gradient(top, rgba(221,221,221,1) 0%, rgba(221,221,221,1) 30%, rgba(204,204,204,1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(221,221,221,1)), color-stop(30%,rgba(221,221,221,1)), color-stop(100%,rgba(204,204,204,1)));
+            background: -webkit-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(221,221,221,1) 30%,rgba(204,204,204,1) 100%);
+            background: -o-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(221,221,221,1) 30%,rgba(204,204,204,1) 100%);
+            background: -ms-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(221,221,221,1) 30%,rgba(204,204,204,1) 100%);
+            background: linear-gradient(to bottom, rgba(221,221,221,1) 0%,rgba(221,221,221,1) 30%,rgba(204,204,204,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#cccccc',GradientType=0 );
+        }
+
+        ul.notification-list > li a {
+            font-size: 1.2em;
+            color: #777777;
+        }
+
+        ul.notification-list li div.content {
+            position: absolute;
+            display: none;
+            width: 470px;
+            top: 26px;
+            left: 0;
+            border: 1px solid black;
+            border-top: none;
+            font-size: 0.85em;
+        }
+        
+            ul.notification-list li div.content ul li {
+                display: block;
+                padding: 5px 15px;
+            }
+            ul.notification-list li div.content ul li:hover {
+                text-decoration: underline;
+            }
+
+                ul.notification-list li div.content ul li a img {
+                    margin: 0 5px 0 0;
+                }
+
+
+                    ul.notification-list li div.content ul li a span strong {
+                        color: #5e5e5e;
+                    }
