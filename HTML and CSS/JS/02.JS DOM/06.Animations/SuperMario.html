@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SVG - MEAN</title>
+    <script src="js/kenetic.js"></script>
+    <script src="js/raphael.js"></script>
+    <script src="js/superMario.js"></script>
+
+    <style>
+        #bg-container {
+            background: #6b88ff;
+            border: 1px solid #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <svg id="bg-container" width="1000" height="600"></svg>
+    <div id="container"></div>
+
+    <script>
+        var paper = Raphael('bg-container', 1024, 600);
+
+        var cloud = paper.image('images/cloud.png', paper.width + 200, 136, 75, 55);
+        var cloud2 = paper.image('images/cloud.png', paper.width, 80, 75, 55);
+        var treeClouds = paper.image('images/treeClouds.png', paper.width + 500, 250, 152, 57);
+        var blocks = [];
+
+        var moveCloud = Raphael.animation({ x: -100 }, 15000).repeat(Infinity);
+        var moveCloud2 = Raphael.animation({ x: -100 }, 9000).repeat(Infinity);
+        var moveTreeCoulds = Raphael.animation({ x: -100 }, 12000).repeat(Infinity);
+        var moveBlocks = Raphael.animation({ x: -20 }, 10000).repeat(Infinity);
+
+        for (var i = 0, index = 0; i < 1030; i += 30, index++) {
+            blocks[index] = paper.image('images/ground.png', i, 570, 29, 29);
+        }
+
+        for (var i = 0, length = blocks.length; i < length; i += 1) {
+            var moveBlocks = Raphael.animation({ x: -30 + 30 * i }, 1000).repeat(Infinity);
+            blocks[i].animate(moveBlocks);
+        }
+
+        cloud.animate(moveCloud);
+        cloud2.animate(moveCloud2);
+        treeClouds.animate(moveTreeCoulds);
+    </script>
+
+
+</body>
+</html>

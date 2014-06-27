@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ListView plug-in</title>
+    <link href="css/ListView.css" rel="stylesheet" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/handlebars-v1.3.0.js"></script>
+</head>
+<body>
+
+    <header><h1>ul example</h1></header>
+    <ul id="books-list" data-template="book-item-template"></ul>
+
+    <script id="book-item-template" type="text/x-handlebars-template">
+        <li class="book-item">
+            <a href="/#books/{{id}}">
+                <strong>{{title}}</strong>
+            </a>
+        </li>
+    </script>
+
+    
+    <header><h1>table example</h1></header>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody id="students-table" data-template="students-row-template">
+        </tbody>
+    </table>
+    <script id="students-row-template" type="text/x-handlebars-template">
+        <tr class="student-row">
+            <td>{{number}}</td>
+            <td>{{name}}</td>
+            <td>{{mark}}</td>
+        </tr>
+    </script>
+    
+    <header><h1>ul extended version example</h1></header>
+    <ul id="books-list-extended">
+        <li class="book-item">
+            <a href="/#books/{{id}}">
+                <strong>{{title}}</strong>
+            </a>
+        </li>
+    </ul>
+
+    <script id="Script1" type="text/x-handlebars-template">
+    </script>
+
+    <header><h1>table extended version example</h1></header>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody id="students-table-extended">
+            <tr class="student-row">
+                <td>{{number}}</td>
+                <td>{{name}}</td>
+                <td>{{mark}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/listViewPlugin.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>YouTube logo</title>
+    <script src="js/raphael.js"></script>
+    <style>
+        #container {
+            border: 1px solid black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var paper = Raphael('container', 800, 300);
+
+        // make the red rectangle
+        paper.rect(160, 80, 160, 75, 20)
+            .attr({
+                fill: '#ec2828',
+                stroke: 'none'
+            });
+
+        // make the 'You' text
+        paper.text(100, 115, 'You')
+            .attr({
+                fill: '#4b4b4b',
+                'font-size': 60,
+                'font-family': 'Tahoma',
+                'font-weight': 'bold'
+            });
+
+        // make the 'Tube' text
+        paper.text(240, 115, 'Tube')
+            .attr({
+                fill: 'white',
+                'font-size': 60,
+                'font-family': 'Tahoma',
+                'font-weight': 'bold'
+            });
+
+    </script>
+</body>
+</html>

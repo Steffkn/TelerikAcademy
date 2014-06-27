@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <fieldset>
+        <legend>Change colors</legend>
+        <label for="font-color">Font color: </label>
+        <input type="color" id="font-color" name="fontColor" />
+        <label for="bg-color">Background color: </label>
+        <input type="color" id="bg-color" name="bgColor" />
+    </fieldset>
+    <fieldset>
+        <legend>Textarea</legend>
+        <textarea id="text">some randomly generated numbers
+        </textarea>
+    </fieldset>
+
+    <script>
+        (function () {
+            'use strict';
+
+            function addEventListener(selector, eventName, listener) {
+                document.querySelector(selector).addEventListener(eventName, listener, false);
+            }
+
+            var textEl = document.querySelector('#text');
+
+            addEventListener('#font-color', 'change', function (event) {
+                textEl.style.color = event.target.value;
+            });
+
+            addEventListener('#bg-color', 'change', function (event) {
+                textEl.style.backgroundColor = event.target.value;
+            });
+        })();
+    </script>
+</body>
+</html>

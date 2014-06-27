@@ -1,0 +1,22 @@
+﻿body {
+    margin: 0 auto;
+    width: 450px;
+}
+
+#wrapper {
+  text-align: left;
+}
+
+button {
+    width: 100px;
+}
+
+#todo-list {
+  list-style: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,56 @@
+﻿body, div, input, button, table, thead, tbody, tr, td, th {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+table.gridView-table thead tr th {
+    background-color: #ccc;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+table.gridView-table tbody tr td {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.input-container {
+    display: inline-block;
+    background-color: lightblue;
+}
+
+input, button, table {
+    margin: 10px;
+}
+/*<div id="gridview-container">
+        <div class="input-container">
+            <input class="GridViewColNumber" type="text" name="colNumber">
+            <button id="btn-AddCols">Add cols</button><br>
+            <input class="col-data-input" type="text" name="rowData[]"><input class="col-data-input" type="text" name="rowData[]"><br>
+            <div class="gridView">
+                <table class="gridView-table">
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr></tr>
+                        <td colspan="2">
+                            <div class="input-container">
+                                <input class="GridViewColNumber" type="text" name="colNumber">
+                                <button id="Button1">Add cols</button></div>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <button id="btn-AddHeader">Add header</button>
+            <button id="btn-AddRow">Add row</button>
+            <button id="btn-GridView">Add GridView</button></div>
+    </div>*/

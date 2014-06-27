@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Document Object Model</title>
+    <script src="js/DOM.js"></script>
+    <script src="js/printInElement.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Task 1</legend>
+        <button onclick="usingQuerySelectorAll()">Task 1 usingQuerySelectorAll</button>
+        <button onclick="usingGetElementsByTagName()">Task 1 usingGetElementsByTagName</button>
+
+        <section>
+            <div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <article>
+                        <div>
+                            <div></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </fieldset>
+
+    <fieldset>
+        <legend>Task 2</legend>
+        <form id='form'>
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" onchange="getValueOfInputText(this)" />
+            <br />
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" onchange="getValueOfInputText(this)" />
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Task 3</legend>
+        <label for="colorPicker">Color picker</label>
+        <input type="color" id="colorPicker" onchange="changeBGColor()" />
+    </fieldset>
+
+    <fieldset>
+        <legend>Result</legend>
+        <div id="result"></div>
+    </fieldset>
+</body>
+</html>

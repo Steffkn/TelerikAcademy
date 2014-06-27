@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bouncing ball</title>
+    <style>
+        #bouncing-ball {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bouncing-ball"
+        width="800"
+        height="600">Your browser does not support canvas! Sorry!
+    </canvas>
+
+    <script>
+
+        var canvas = document.getElementById('bouncing-ball');
+        var ctx = canvas.getContext('2d');
+        var ballX = canvas.width / 2;
+        var ballY = canvas.height / 2;
+        var ballSize = 15;
+
+        var left = -1;
+        var up = 1;
+
+        function drawBall(x, y, radius) {
+            // ball
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = "yellow";
+            ctx.fill();
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function moveBall(speed) {
+
+            if (ballX - ballSize <= 0) {
+                left = 1;
+            } else if (ballX + ballSize >= canvas.width) {
+                left = -1;
+            }
+
+            if (ballY - ballSize <= 0) {
+                up = 1;
+            } else if (ballY + ballSize >= canvas.height) {
+                up = -1;
+            }
+
+            ballX = ballX + left * speed;
+            ballY = ballY + up * speed;
+            drawBall(ballX, ballY, ballSize)
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function run() {
+            clearCanvas();
+            moveBall(2);
+        }
+
+        setInterval(function () {
+            run();
+        }, 24);
+    </script>
+</body>
+</html>

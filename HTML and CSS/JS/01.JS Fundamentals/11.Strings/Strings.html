@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/printInElement.js"></script>
+    <script src="js/reverseString.js"></script>
+    <script src="js/checkTheBrackets.js"></script>
+    <script src="js/countSubstrings.js"></script>
+    <script src="js/changeCaseOfText.js"></script>
+    <script src="js/replaceWhiteSpace.js"></script>
+    <script src="js/removeTags.js"></script>
+    <script src="js/parseURL.js"></script>
+    <script src="js/replaceTagsAWithURL.js"></script>
+    <script src="js/extractEmails.js"></script>
+    <script src="js/findPolindromes.js"></script>
+    <script src="js/createHTMLUL.js"></script>
+    <script src="js/stringFormat.js"></script>
+</head>
+<body>
+    <a href="#" onclick="onReverseString()">1. Function that reverses string and returns it.</a>
+    <a href="#" onclick="onBracketsCheck()">2. Function to check if in a given expression the brackets are put correctly.</a>
+    <a href="#" onclick="onSearchInString()">3. Function that finds how many times a substring is contained in a given text (perform case insensitive search).</a>
+    <a href="#" onclick="onChangeText()">4. Function that changes the text in all regions to mixed upper or lower case</a>
+    <a href="#" onclick="onReplaceWhiteSpace()">5. Function that replaces non breaking white-spaces in a text with &nbsp;</a>
+    <a href="#" onclick="onRemoveTag()">6. Function that extracts the content of a html page given as text.</a>
+    <a href="#" onclick="onParseURL()">7. Function that parses an URL address given in the format: [protocol]://[server]/[resource]</a>
+    <a href="#" onclick="onTagAReplasing()">8. Function that replaces in a HTML document given as string all the tags a href="…" with corresponding tags [URL=…]…/URL]. </a>
+    <a href="#" onclick="onExtractEnamils()">9. Function for extracting all email addresses from given text.</a>
+    <a href="#" onclick="onSearchPolindromes()">10.Function that extracts from a given text all palindromes.</a>
+    <a href="#" onclick="onStringFormat()">11.Function function that formats a string using placeholders.</a>
+    <a href="#" onclick="onCreatingHTMLUL()">12.Function that creates a HTML UL using a template for every HTML LI.</a>
+
+    <div id="result"></div>
+    
+    <div data-type="template" id="list-item">
+        <strong>-{name}-</strong> <span>-{age}-</span>
+    </div>
+
+</body>
+</html>

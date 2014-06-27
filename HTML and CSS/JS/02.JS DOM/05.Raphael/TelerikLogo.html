@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Telerik logo</title>
+    <script src="js/raphael.js"></script>
+    <style>
+        #container {
+            border:1px solid black;
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var paper = Raphael('container', 800, 300);
+
+        paper.rect(20, 50, 420, 150).
+        attr({
+            stroke: '#e0ffa3',
+            fill: 'white'
+        });
+
+        // make the logo
+        var startX = 50;
+        var startY = 100;
+        var step = 20;
+        //var pathString = 'M 50 50 L70 30 L110 70 L90 90 L70 70 L110 30 L130 50'
+        var pathString = 'M ' + startX + ' ' + startY + ' L' + (startX + step) + ' ' + (startY - step) +
+            ' L' + (startX + 3 * step) + ' ' + (startY + step) +
+            ' L' + (startX + 2 * step) + ' ' + (startY + 2 * step) +
+            ' L' + (startX + step) + ' ' + (startY + step) +
+            ' L' + (startX + 3 * step) + ' ' + (startY - step) +
+            ' L' + (startX + 4 * step) + ' ' + (startY);
+        console.log(pathString);
+        var logoPath = paper.path(pathString)
+            .attr({
+                stroke: '#5ce600',
+                'stroke-width': step/2
+            });
+
+        // add the text
+        paper.text(250, 120, 'Telerik')
+            .attr({
+                fill: '#2a2a2a',
+                'font-size': 70,
+                'font-family': 'Tahoma'
+            });
+
+        paper.text(290, 170, 'Develop experiences')
+            .attr({
+                fill: '#2a2a2a',
+                'font-size': 29,
+                'font-family': 'Tahoma'
+            });
+
+        // make the copyright symbol
+        paper.text(365, 115, 'R')
+            .attr({
+                fill: '#2a2a2a',
+                'font-size': 15,
+                'font-family': 'Tahoma'
+            });
+        paper.circle(365, 115, 8);
+
+    </script>
+</body>
+</html>

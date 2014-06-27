@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>To do List - homework</title>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Make your "TODO" List</h1>
+
+        <form id="create-todo">
+            <input name="item" placeholder="Add task..." required="required" />
+            <button type="submit">Add</button>
+        </form>
+
+        <div>
+            <button id="show-item">Show All</button>
+            <button id="hide-item">Hide</button>
+            <button id="delete-item">Delete</button>
+            <button id="deleteAll-items">Delete All</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/todo-list.js"></script>
+</body>
+
+</html>

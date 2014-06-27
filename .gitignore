@@ -108,3 +108,4 @@ Backup*/
 UpgradeLog*.XML
 /PHP/05.WebBookCatalogWithComments/nbproject/private/
 /PHP/07.Views/nbproject/private/
+/PHP/00.HospitalRecords/nbproject/private/

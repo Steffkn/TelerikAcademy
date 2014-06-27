@@ -1,0 +1,32 @@
+﻿body, table, thead, tbody, tr, th, td{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Tahoma, serif;
+}
+#course-table {
+    margin: 10px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#course-table thead tr th{
+    font-weight: normal;
+    color: white;
+    background-color: #a6a6a6;
+}
+#course-table thead tr th, #course-table tbody tr td {
+    padding: 0 3px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#course-table tbody tr:nth-child(2n+1) {
+    background-color: #fff;
+}
+#course-table tbody tr:nth-child(2n) {
+    background-color: #d9d9d9;
+}
+    #course-table tbody tr td:nth-child(2){
+        text-align: left;
+    }
