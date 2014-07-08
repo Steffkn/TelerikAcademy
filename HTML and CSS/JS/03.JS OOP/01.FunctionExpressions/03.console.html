@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Fansy Console</title>
+    <script src="js/03.console.js"></script>
+</head>
+<body>
+    <h1>output in the console</h1>
+    <script>
+        fansyConsole.writeLine("Message: hello");
+        //logs to the console "Message: hello"
+
+        fansyConsole.writeLine("Message: {0}", "Petar");
+        //logs to the console "Message: Petar"
+
+        fansyConsole.writeError("Error: {0}", "Something happened");
+        fansyConsole.writeWarning("Warning: {0}", "A warning message");
+    </script>
+</body>
+</html>

@@ -6,9 +6,9 @@ namespace ToolsForDevelopers
 
     class ToolsForDevelopers
     {
-        static void Main()
-        {
-            Console.WriteLine("Hello");
-        }
+        //static void Main()
+        //{
+        //    Console.WriteLine("Hello");
+        //}
     }
 }

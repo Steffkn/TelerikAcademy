@@ -1,0 +1,1 @@
+﻿//# sourceMappingURL=IHeroClass.js.map

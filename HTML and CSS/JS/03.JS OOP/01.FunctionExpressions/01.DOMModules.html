@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Create a module for working with DOM-->
+    <title>Task 1</title>
+    <script src="js/01.domModule.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+	<a class="button" href="#">button</a>
+	<ul>
+	<li></li>
+	<li></li>
+	<li></li>	
+</ul>
+</div>
+    <script>
+		var div = document.createElement("div");
+		//appends div to #wrapper
+		domModule.addChild(div,"#wrapper"); 
+
+		//removes li:first-child from ul
+		domModule.removeChild("ul","li:first-child"); 
+
+		//add handler to each a element with class button
+		domModule.addHandler("a.button", 'click', function(){alert("Clicked")});
+
+		var navItem = document.createElement("span");
+		domModule.appendToBuffer("#wrapper", div.cloneNode(true));
+		domModule.appendToBuffer("#wrapper ul", navItem);
+
+        //test for buffer
+        var a = document.createElement('div');
+        for (var i = 0; i < 101; i++) {
+            a.innerHTML = i + '';
+            domModule.appendToBuffer('#wrapper' , a.cloneNode(true));
+        }
+    </script>
+</body>
+</html>

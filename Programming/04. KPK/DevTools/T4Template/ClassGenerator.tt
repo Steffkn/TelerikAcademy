@@ -1,0 +1,35 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+// Auto generated class with "itemsNumber" count of items
+<# int imtesNumber = 4; #>
+// currently <#= imtesNumber#>
+namespace ToolsForDevelopers{
+	using System.Linq;
+
+	public class ClassNamePlaceholder {
+
+<# for(int i = 0; i < imtesNumber; i++) { #>
+		private int item<#=i#>;
+<# } #>
+
+<# for(int i = 0; i < imtesNumber; i++) { #>
+		public int Item<#=i#> { get; private set; }
+<# } #>
+
+		public ClassNamePlaceholder () 
+		{
+			this(<# for(int i = 0; i < imtesNumber - 1; i++) { #>0, <# } #>0);
+		}
+
+		public ClassNamePlaceholder (<# for(int i = 0; i < imtesNumber - 1; i++) { #>int item<#=i#>, <# } #>int item<#= imtesNumber -1#>)
+		{
+<# for(int i = 0; i < imtesNumber; i++) { #>
+			this.Item<#=i#> = item<#=i#>;
+<# } #>
+		}
+	}
+}

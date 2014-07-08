@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Moving Elements</title>
+    <link href="css/movingShapes.css" rel="stylesheet" />
+    <script src="js/02.movingShapes.js"></script>
+</head>
+<body>
+    <button id="addRect" >Add Rect</button>
+    <button id="addCircle" >Add ellipse</button>
+
+    <div id="holderForRect">
+    </div>
+    <div id="holderForCircle">
+    </div>
+    <script>
+        var addCircleBtn = document.getElementById('addCircle');
+
+        addCircleBtn.addEventListener('click', function () {
+            movingShapes.add('ellipse');
+        }, false);
+
+        var addCircleBtn = document.getElementById('addRect');
+
+        addCircleBtn.addEventListener('click', function () {
+            movingShapes.add('rect');
+        }, false);
+
+        movingShapes.move();
+    </script>
+</body>
+</html>

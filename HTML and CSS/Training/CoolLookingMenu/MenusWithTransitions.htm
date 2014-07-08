@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://css-snippets.com/demos/menu-color.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Menus with Transitions</title>
+<style>
+	body, div, ul, li, p { margin: 0; padding: 0; } 
+	body { width: 900px; margin: 20px auto; } 
+	ul {   
+		font-family:"Century Gothic", "HelveticaNeueLT Pro 45 Lt", sans-serif; 
+	}
+	ul li { 
+		list-style: none; 
+	} 	
+	
+	#nav3 li a { 
+		width: 100px; 
+		height: 40px; 
+		line-height: 53px; 
+		color: #333; 
+		text-decoration: none; 
+ 		display: block;
+		border-bottom: 4px solid #999;  
+		padding-left: 5px; 
+		-webkit-transition: .2s all linear;
+		-moz-transition: .2s all linear;
+		-o-transition: .2s all linear;
+		transition: .2s all linear;			
+	} 
+	#nav3 li a:hover { 
+		border-width: 35px;
+		height: 9px; 
+	}
+	#nav3 li a { border-color: #636393; } 
+	#nav3 li+li a { border-color: #B5222D; } 
+	#nav3 li+li+li a { border-color: #D4953C; } 
+	#nav3 li+li+li+li a { border-color: #609491; } 
+	#nav3 li+li+li+li+li a{ border-color: #87A248; } 	
+</style>
+</head>
+
+<body>
+<div id="demo">
+    
+    <ul id="nav3">
+      <li><a href="http://css-snippets.com/demos/menu-color.html#">Home</a></li>
+      <li><a href="http://css-snippets.com/demos/menu-color.html#">Tutorials</a></li>
+      <li><a href="http://css-snippets.com/demos/menu-color.html#">About</a></li>
+      <li><a href="http://css-snippets.com/demos/menu-color.html#">Newsletter</a></li>
+      <li><a href="http://css-snippets.com/demos/menu-color.html#">Contact</a></li>
+    </ul><!-- nav3 -->     
+
+</div>
+
+
+</body></html>
