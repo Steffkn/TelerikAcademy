@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Builder">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Builder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuilderPattern">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>BuilderPattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcreteBuilder1">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAEACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ConcreteBuilder1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcreteBuilder2">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAEACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ConcreteBuilder2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Director">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Director.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Product">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

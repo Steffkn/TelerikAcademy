@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Component">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABQAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Composite">
+    <Position X="1.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="Component" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="2.632" />
+        <Point X="3.75" Y="2.875" />
+        <Point X="2.5" Y="2.875" />
+        <Point X="2.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAQAAAAABQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Composite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompositePattern">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>CompositePattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Leaf">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Leaf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
