@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Rams and sheeps</title>
+    <script src="js/libs/jquery-2.1.1.min.js"></script>
+    <script src="js/libs/require.js"></script>
+    <script src="js/libs/underscore.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <p>Wellcome to my Rams and Sheeps game! I hope that you will enjoy it!! :)</p>
+            <p>The rules are simple. Enter a 4 digit number (xyzw) and try to guess what number i am thinking of (abcd). Ram means that a digit from xyzw is contained in abcd and it is on the same position. Sheep means that a digit from xyzw is contained in abcd, but not on the same position</p>
+
+            <div id="topScores">
+                <ol></ol>
+                <input id="resetBtn" type="submit" name="reset" value="Reset the game" />
+            </div>
+
+            <div id="guesses">
+                <input id="userInput" maxlength="4" type="text" name="guessNumber" />
+                <input id="guessBtn" type="submit" name="guess" value="Try" />
+                <ul></ul>
+            </div>
+
+            <div id="userData">
+                <p>Congratulations you won!</p>
+                <label for="userName">Your name: </label>
+                <input id="userName" maxlength="20" type="text" name="userName" />
+                <input id="getNameBtn" type="submit" name="getUserName" value="Submit" />
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ramsAndSheeps.js"></script>
+</body>
+</html>
