@@ -1,0 +1,9 @@
+﻿body {
+    font-size: 14px;
+    font-family: Tahoma, serif;
+}
+#chat-container {
+    padding: 10px;
+    background-color: #ccc;
+    color: black;
+}

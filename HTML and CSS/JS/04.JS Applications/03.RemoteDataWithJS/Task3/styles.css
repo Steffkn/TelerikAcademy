@@ -1,0 +1,18 @@
+body{
+    padding: 10px;
+    font-family: Tahoma, cursive;
+}
+
+#success{
+    border:1px solid green;
+    background: green;
+}
+#error{
+    border:1px solid darkred;
+    background: red;  
+}
+#success,#error{
+    color: white;
+    padding: 5px 15px;
+    display: none;
+}
