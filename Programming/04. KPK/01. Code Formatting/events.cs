@@ -49,6 +49,7 @@ class Event : IComparable
         {
             toString.Append(" | " + location);
         }
+
         return toString.ToString();
     }
 }
@@ -112,6 +113,7 @@ class Events
                 removed++;
                 byDate.Remove(eventToRemove);
             }
+
             byTitle.Remove(title);
             Messages.EventDeleted(removed);
         }
@@ -127,6 +129,7 @@ class Events
                 Messages.PrintEvent(eventToShow);
                 showed++;
             }
+
             if (showed == 0)
             {
                 Messages.NoEventsFound();
@@ -148,18 +151,22 @@ class Events
         {
             AddEvent(command); return true;
         }
+
         if (command[0] == 'D')
         {
             DeleteEvents(command); return true;
         }
+
         if (command[0] == 'L')
         {
             ListEvents(command); return true;
         }
+
         if (command[0] == 'E')
         {
             return false;
         }
+
         return false;
     }
 

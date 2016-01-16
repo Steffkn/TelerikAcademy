@@ -32,6 +32,7 @@ class TestAnimal
         Console.WriteLine("Average age of {0}: {1} ", dogs[0].AnimalKind().ToLower(), Animal.Average(dogs));
         Console.WriteLine("Average age of {0}: {1} ", frogs[0].AnimalKind().ToLower(), Animal.Average(frogs));
         Console.WriteLine();
+
         // make them talk!
         frogs[0].Talk();
         cats[0].Talk();

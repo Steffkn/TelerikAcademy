@@ -12,7 +12,7 @@ public class Triangle : Shape
     /// <returns>Returns the surface of a triangle as double</returns>
     public override double CalculateSurface()
     {
-        return ( Height * Width )/ 2;
+        return (this.Height * this.Width) / 2;
     }
 }
 

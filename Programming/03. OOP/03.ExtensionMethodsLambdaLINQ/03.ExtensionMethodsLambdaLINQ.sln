@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ExtensionSubstring", "01.ExtensionSubstring\01.ExtensionSubstring.csproj", "{01DB9AAE-2DFD-4AE2-8283-C726112AAFC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ExtensionIEnumerable", "02.ExtensionIEnumerable\02.ExtensionIEnumerable.csproj", "{9D575248-212E-4215-8F25-A9F3AD60BC91}"
@@ -16,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.ExecuteAtTSeconds", "07.ExecuteAtTSeconds\07.ExecuteAtTSeconds.csproj", "{D0519CB5-4DAE-4642-9D9F-B3366D574C07}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.ExecuteAtTSecondsWithEvents", "08.ExecuteAtTSecondsWithEvents\08.ExecuteAtTSecondsWithEvents.csproj", "{9AC62122-5877-45C4-BB6C-DF7E6634232E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.StudentsGroup", "09.StudentsGroup\09.StudentsGroup.csproj", "{A96E5C97-1227-4E4E-8157-6212574070B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.LongestString", "17.LongestString\17.LongestString.csproj", "{A83E9C55-347A-4719-9ED0-2A86249147CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +61,14 @@ Global
 		{9AC62122-5877-45C4-BB6C-DF7E6634232E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AC62122-5877-45C4-BB6C-DF7E6634232E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AC62122-5877-45C4-BB6C-DF7E6634232E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96E5C97-1227-4E4E-8157-6212574070B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96E5C97-1227-4E4E-8157-6212574070B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96E5C97-1227-4E4E-8157-6212574070B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96E5C97-1227-4E4E-8157-6212574070B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83E9C55-347A-4719-9ED0-2A86249147CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83E9C55-347A-4719-9ED0-2A86249147CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83E9C55-347A-4719-9ED0-2A86249147CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83E9C55-347A-4719-9ED0-2A86249147CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

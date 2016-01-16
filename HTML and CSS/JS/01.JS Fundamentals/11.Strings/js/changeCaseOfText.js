@@ -53,5 +53,6 @@ function doLowCase(text) {
         text = text.replace(insedeText, lowerText);
         indexStart = text.indexOf("<lowcase>", indexStart + 1);
     }
+
     return text;
 }

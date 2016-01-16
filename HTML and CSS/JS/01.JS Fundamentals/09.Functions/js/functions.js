@@ -14,11 +14,11 @@ function lastNumberAsWord() {
         case 2: result = "two"; break;
         case 3: result = "tree"; break;
         case 4: result = "four"; break;
-        case 0: result = "five"; break;
-        case 0: result = "six"; break;
-        case 0: result = "seven"; break;
-        case 0: result = "eight"; break;
-        case 0: result = "nine"; break;
+        case 5: result = "five"; break;
+        case 6: result = "six"; break;
+        case 7: result = "seven"; break;
+        case 8: result = "eight"; break;
+        case 9: result = "nine"; break;
         default: result = "Invalid number"; break;
     }
 
@@ -98,9 +98,6 @@ function countDivs() {
 
 // 5 Write a function that counts how many times given number appears in given array. Write a test function to check if the function is working correctly.
 
-var array = [1, 2, 3, 4, 5, 6, 5, 5, 2, 31, 23, 5];
-printInElement("[" + array + "]");
-
 function countNumber(array, number) {
 
     if (isNaN(number)) {
@@ -113,13 +110,87 @@ function countNumber(array, number) {
             counter++;
         }
     }
-    return "The given number is found " + counter + " times";
+    return "The number " + number + " is found " + counter + " times";
 }
 
 function checkFunction() {
+    var array = [1, 2, 3, 4, 5, 6, 5, 5, 2, 31, 23, 5];
     var result = countNumber(array);
-    printInElement(result);
+    
+    printInElement("Array: [" + array + "] -> " + result);   
+    //rintInElement(result);
 }
 // 6 Write a function that checks if the element at given position in given array of integers is bigger than its two neighbors (when such exist).
+
+function checkNeighbors(array, pos) {
+    var result;
+
+    if (isNaN(array[pos]))
+    {
+      result = "The given position is invalid!"
+    }
+    else if(isNaN(array[pos - 1]))
+    {
+      result = "This element doesn't have 'left' neighbor";
+    }
+    else if(isNaN(array[pos + 1]))
+    {
+      result = "This element doesn't have 'right' neighbor";
+    }
+    else
+    {
+      if(	array[pos] > array[pos - 1] && 
+			array[pos] > array[pos + 1])
+		{
+            result = true;
+       }
+       else{
+        result = "The element at position "+ pos + " is lower than at least one of its neighbors";
+       }
+    }
+    
+    return result;
+}
+
+function checkNeighborsFunction() {
+    var array = [1, 2, 3, 4, 5, 6, 5, 5, 2, 31, 23, 5];
+	var position;
+	
+    if (isNaN(position)) {
+        position = parseInt(prompt("Enter position from array["+array+"]:"));
+    } 
+	
+    var result = checkNeighbors(array,position);
+	if(result === true){
+		output = "The element at position " + position + " is bigger than its neighbors"; 
+	}
+	else if(result === false){
+		output = "The element at position " + position + " is lower than or equal to at least one of its neighbors";
+	}
+	else{
+		output = result;
+	}
+	
+    printInElement("Array: [" + array + "] -> " + output);  
+}
+
 // 7 Write a function that returns the index of the first element in array that is bigger than its neighbors, or -1, if there’s no such element.
 //    Use the function from the previous exercise.
+
+function checkAllNeighbors() {
+    var array = [1, 2, 3, 4, 5, 6, 5, 5, 2, 31, 23, 5];
+    //var array = [1, 2, 3, 4, 5, 5, 5, 5, 2, 20, 23, 50]; // result = -1
+	var position = -1;
+	
+	// eliminate the first and the last elements (they don't have 2 neightbors)
+	for (var i = 1; i < array.length - 1; i++) {
+		var result = checkNeighbors(array,i);
+		console.log(result);
+        if (result === true) {
+            position = i;
+			break;
+        }
+    }
+	
+    printInElement("Array: [" + array + "] -> First element that is bigger than its neightbors is at: " + position);  
+}

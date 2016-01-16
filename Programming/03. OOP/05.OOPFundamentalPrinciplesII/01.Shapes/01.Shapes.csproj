@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
+    <Compile Include="Square.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

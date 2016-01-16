@@ -12,7 +12,7 @@ public class Rectangle : Shape
     /// <returns>Returns the surface of a rectangle as double.</returns>
     public override double CalculateSurface()
     {
-        return Height * Width;
+        return this.Height * this.Width;
     }
 }
 

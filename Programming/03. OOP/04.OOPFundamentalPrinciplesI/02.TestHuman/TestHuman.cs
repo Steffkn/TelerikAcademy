@@ -23,7 +23,7 @@ class Program
 
         // sort by grade
         studenti = studenti
-            .OrderByDescending(x => x.Grade)
+            .OrderBy(x => x.Grade)
             .ToList();
 
         foreach (Student student in studenti)

@@ -10,26 +10,26 @@ public abstract class Account : IDepositable
     // properties
     public bool IsCompany
     {
-        get { return isCompany; }
-        set { isCompany = value; }
+        get { return this.isCompany; }
+        set { this.isCompany = value; }
     }
 
     public string Customer
     {
-        get { return customer; }
-        set { customer = value; }
+        get { return this.customer; }
+        set { this.customer = value; }
     }
 
     public decimal Balance
     {
-        get { return balance; }
-        set { balance = value; }
+        get { return this.balance; }
+        set { this.balance = value; }
     }
 
     public double InterestRate
     {
-        get { return interestRate; }
-        set { interestRate = value; }
+        get { return this.interestRate; }
+        set { this.interestRate = value; }
     }
 
     /// <summary>

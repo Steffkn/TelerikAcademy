@@ -26,12 +26,12 @@ function onCreatingHTMLUL() {
 
 function generateList(people, tmpl) {
     tmpl = new String(tmpl); //parse to string
-    tmpl = tmpl.replace(/<strong>/g, '<li><strong>'); //add <li> tag
-    tmpl = tmpl.replace(/<\/span>/g, '</span></li>'); //add</li> tag
-    var list = new String('<ul>');//string for keepen the result
+    var list = new String('<ul>');//string for keeping the result
     for (var i in people) {
-        var currentLI = tmpl.replace('-{name}-', people[i].name);
+        var currentLI = new String('<li>');
+        currentLI += tmpl.replace('-{name}-', people[i].name);
         currentLI = currentLI.replace('-{age}-', people[i].age);
+        currentLI += '</li>';
         list += currentLI;
     }
     list += '</ul>';

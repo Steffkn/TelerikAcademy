@@ -8,7 +8,7 @@
 
 function onParseURL() {
     printInElement('', true);
-    var url = "http://www.devbg.org/forum/index.php";
+    var url = "http://telerikacademy.com/Courses/Courses/Details/239";
     printInElement('Given url: '+ url + "\n", true);
     printInElement("Protocol: " + parseURL(url)['Protocol'] + "\n");
     printInElement("Server: " + parseURL(url)['Server'] + "\n");

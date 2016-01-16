@@ -6,7 +6,7 @@ function onSearchInString() {
 
     var result = findString(string, "in");
 
-    printInElement("The string 'in' is found " + result + " times.");
+    printInElement("Text: " + string + "\nThe string 'in' is found " + result + " times.");
 }
 
 function findString(text, toSearchString) {
