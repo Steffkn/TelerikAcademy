@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BasicBASIC", "01.BasicBASIC\01.BasicBASIC.csproj", "{EFA1720A-BDB4-4BD8-A495-4AEE824680DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Crossword", "02.Crossword\02.Crossword.csproj", "{645C5925-C8BB-4D54-B0EB-0B56CF783A0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFA1720A-BDB4-4BD8-A495-4AEE824680DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA1720A-BDB4-4BD8-A495-4AEE824680DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA1720A-BDB4-4BD8-A495-4AEE824680DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA1720A-BDB4-4BD8-A495-4AEE824680DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645C5925-C8BB-4D54-B0EB-0B56CF783A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645C5925-C8BB-4D54-B0EB-0B56CF783A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645C5925-C8BB-4D54-B0EB-0B56CF783A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645C5925-C8BB-4D54-B0EB-0B56CF783A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
