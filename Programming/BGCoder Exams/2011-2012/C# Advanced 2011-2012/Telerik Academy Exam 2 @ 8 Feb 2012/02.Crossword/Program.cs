@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+
 class Program
 {
     static void Main()
     {
         int n = int.Parse(Console.ReadLine());
         List<string> words = new List<string>();
-        for (int wordIndex = 0; wordIndex < n*2; wordIndex++)
+        for (int wordIndex = 0; wordIndex < n * 2; wordIndex++)
         {
             words.Add(Console.ReadLine());
         }
 
+        var sortedWords = words.OrderBy(x => x).ToList();
+
         string[,] crossword = new string[n, n];
 
-        for (int row = 0; row < words.Count; row++)
+        foreach (var word in sortedWords)
         {
-            for (int col = 0; col < words.Count; col++)
+            if (SearchWordWith(sortedWords, word[0], 1) != -1)
             {
-                
+
             }
         }
-
     }
 
     static int SearchWordWith(List<string> words, char letter, int position)
@@ -34,6 +37,4 @@ class Program
         }
         return -1;
     }
-
-
 }

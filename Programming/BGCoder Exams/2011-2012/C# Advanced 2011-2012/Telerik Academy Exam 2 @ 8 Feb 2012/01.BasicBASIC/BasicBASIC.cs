@@ -7,7 +7,7 @@ class BasicBASIC
 {
     static int v = 0, w = 0, x = 0, y = 0, z = 0;
         
-    static void Main()
+    static void Oldie()
     {
         List<string> comands = new List<string>();
         string commandLine = string.Empty;
